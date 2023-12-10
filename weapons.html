@@ -23,9 +23,18 @@
         .select-container{
             display: flex;
             flex-wrap: row wrap;
+            
         }
         .option{
+            background-color: #5C5470;
             border: 2px solid #FAF0E6;
+            border-radius: 5px;
+            width: 70px;
+        }
+        .selected-option {
+            background-color: #FAF0E6;
+            border: 2px solid #5C5470;
+            color: #5C5470;
             border-radius: 5px;
             width: 70px;
         }
@@ -59,11 +68,11 @@
     <div class="flex-container">
         <div>
             <div class="select-container">
-                <div class="option" onclick="toggleOption('bow')" title="弓" style="background-color: #5C5470;">弓</div>
-                <div class="option" onclick="toggleOption('catalyst')" title="法器">法器</div>
-                <div class="option" onclick="toggleOption('claymore')" title="雙手劍">雙手劍</div>
-                <div class="option" onclick="toggleOption('pole')" title="長柄武器">長柄武器</div>
-                <div class="option" onclick="toggleOption('sword')" title="單手劍">單手劍</div>
+                <div class="option" id="opbow" onclick="toggleOption('bow')" title="弓">弓</div>
+                <div class="option" id="opcatalyst" onclick="toggleOption('catalyst')" title="法器">法器</div>
+                <div class="option" id="opclaymore" onclick="toggleOption('claymore')" title="雙手劍">雙手劍</div>
+                <div class="option" id="oppole" onclick="toggleOption('pole')" title="長柄武器">長柄武器</div>
+                <div class="option" id="opsword" onclick="toggleOption('sword')" title="單手劍">單手劍</div>
             </div>
 
             <div class="weapons">
@@ -104,7 +113,6 @@
 
         </div>
     </div>
-
 
 </body>
 
