@@ -196,7 +196,7 @@ function selectChange() {
                 + '<div class="weapons" style="display: flex; flex-wrap: wrap;">'
                 + '<img loading="eager" title="信使" src="EquipIcon/UI_EquipIcon_Bow_Msg.png" alt="信使" style="background-color:#53799e;">'
                 + '<img loading="eager" title="試作澹月" src="EquipIcon/UI_EquipIcon_Bow_Proto.png" alt="試作澹月" style="background-color:#745a95;">'
-                + '<img loading="eager" title="甲級寶玨" src="EquipIcon/UI_EquipIcon_Catalyst_Phoney.png" alt="甲級寶玨" style="background-color:#53799e;">'
+                + '<img loading="eager" title="甲級寶珏" src="EquipIcon/UI_EquipIcon_Catalyst_Phoney.png" alt="甲級寶珏" style="background-color:#53799e;">'
                 + '<img loading="eager" title="試作金珀" src="EquipIcon/UI_EquipIcon_Catalyst_Proto.png" alt="試作金珀" style="background-color:#745a95;">'
                 + '<img loading="eager" title="昭心" src="EquipIcon/UI_EquipIcon_Catalyst_Truelens.png" alt="昭心" style="background-color:#745a95;">'
                 + '<img loading="eager" title="以理服人" src="EquipIcon/UI_EquipIcon_Claymore_Reasoning.png" alt="以理服人" style="background-color:#53799e;">'
