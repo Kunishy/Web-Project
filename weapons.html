@@ -66,6 +66,25 @@
             border-radius: 5px;
             max-width: 100%;
         }
+        .display-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .display-container img {
+            height: 100px;
+            margin: 10px;
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        .text-container p {
+            margin: 0;
+        }
     </style>
 
 </head>
@@ -144,7 +163,8 @@
             </div>
         </div>
 
-        <div id="display">
+        <div id="display" style="border: 5px solid #5C5470; border-radius: 5px; width: 500px;">
+            
         </div>
     </div>
     <script src="select.js"></script>
