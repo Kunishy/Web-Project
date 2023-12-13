@@ -33,7 +33,7 @@ function selectChange() {
                 + '<img loading="eager" title="宗室祕法錄" src="EquipIcon/UI_EquipIcon_Catalyst_Theocrat.png" alt="宗室祕法錄" style="background-color:#745a95;">'
                 + '<img loading="eager" title="西風秘典" src="EquipIcon/UI_EquipIcon_Catalyst_Zephyrus.png" alt=西風秘典"" style="background-color:#745a95;">'
                 + '<img loading="eager" title="鐵影闊劍" src="EquipIcon/UI_EquipIcon_Claymore_Glaive.png" alt="鐵影闊劍" style="background-color:#53799e;">'
-                + '<img loading="eager" title="雪藏的星銀" src="EquipIcon/UI_EquipIcon_Claymore_Dragonfell.png" alt="雪藏的星銀" style="background-color:#745a95;">'
+                + '<img loading="eager" title="雪葬的星銀" src="EquipIcon/UI_EquipIcon_Claymore_Dragonfell.png" alt="雪葬的星銀" style="background-color:#745a95;">'
                 + '<img loading="eager" title="鐘劍" src="EquipIcon/UI_EquipIcon_Claymore_Troupe.png" alt="鐘劍" style="background-color:#745a95;">'
                 + '<img loading="eager" title="松籟響起之時" src="EquipIcon/UI_EquipIcon_Claymore_Widsith.png" alt="松籟響起之時" style="background-color:#af6f2a;">'
                 + '<img loading="eager" title="冷刃" src="EquipIcon/UI_EquipIcon_Sword_Steel.png" alt="冷刃" style="background-color:#53799e;">'
