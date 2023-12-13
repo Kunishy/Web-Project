@@ -157,7 +157,7 @@ div {
     display: flex;
     left: auto;
     height: auto;
-    width: calc(85%/2.8);
+    width: calc(100%/3.35);
     position: relative;
     border: 5px solid #5C5470;
     margin: 15px;
