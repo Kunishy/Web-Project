@@ -47,13 +47,20 @@
         }
         .name{
             color: black;
-            margin: -3px;
+            margin: -1px;
             font-size: 11px;
         }
         .weapons{
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+            flex-flow:  row wrap;
+            width: 570px;
+        }
+        .weapons-container{
+            display: flex;
+            flex-flow: wrap;
+        }
+        .items{
+            margin: 5px;
         }
         img{
             border-radius: 5px;
@@ -61,12 +68,11 @@
         }
     </style>
 
-    <script src="select.js"></script>
 </head>
 
 <body>
     <div class="flex-container">
-        <div>
+        <div style="width: 500px;">
             <div class="select-container">
                 <div class="option" id="opbow" onclick="toggleOption('bow')" title="弓">弓</div>
                 <div class="option" id="opcatalyst" onclick="toggleOption('catalyst')" title="法器">法器</div>
@@ -76,31 +82,60 @@
             </div>
 
             <div class="weapons">
-                <div id="bow">
-                    <div class="items">
+                <div id="bow" class="weapons-container">
+                    <div class="items" title="天空之翼" onclick="display('天空之翼')">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Dvalin.png" style=" background-color: #af6f2a;">
+                        <div class="name">天空之翼</div>
+                    </div>
+                    <div class="items" title="阿莫斯之弓">
                         <img src="EquipIcon/UI_EquipIcon_Bow_Amos.png" style=" background-color: #af6f2a;">
                         <div class="name">阿莫斯之弓</div>
                     </div>
+                    
+                    <div class="items" title="終末嗟嘆之詩">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Widsith.png" style=" background-color: #af6f2a;">
+                        <div class="name">終末嗟嘆之詩</div>
+                    </div>
+                    <div class="items" title="冬極白星">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Worldbane.png" style=" background-color: #af6f2a;">
+                        <div class="name">冬極白星</div>
+                    </div>
+                    <div class="items" title="若水">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Kirin.png" style=" background-color: #af6f2a;">
+                        <div class="name">若水</div>
+                    </div>
+                    <div class="items" title="飛雷之弦振">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Narukami.png" style=" background-color: #af6f2a;">
+                        <div class="name">飛雷之弦振</div>
+                    </div>
+                    <div class="items" title="獵人之徑">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Ayus.png" style=" background-color: #af6f2a;">
+                        <div class="name">獵人之徑</div>
+                    </div>
+                    <div class="items" title="最初的大魔術">
+                        <img src="EquipIcon/UI_EquipIcon_Bow_Pledge.png" style=" background-color: #af6f2a;">
+                        <div class="name">最初的大魔術</div>
+                    </div>
                 </div>
-                <div id="catalyst">
+                <div id="catalyst" class="weapons-container">
                     <div class="items">
                         <img src="EquipIcon/UI_EquipIcon_Catalyst_Alaya.png" style=" background-color: #af6f2a;">
                         <div class="name">圖萊杜拉的回憶</div>
                     </div>
                 </div>
-                <div id="claymore">
+                <div id="claymore" class="weapons-container">
                     <div class="items">
                         <img src="EquipIcon/UI_EquipIcon_Claymore_Arakalari.png" style=" background-color: #745a95;">
                         <div class="name">森林王器</div>
                     </div>
                 </div>
-                <div id="pole">
+                <div id="pole" class="weapons-container">
                     <div class="items">
                         <img src="EquipIcon/UI_EquipIcon_Pole_Arakalari.png" style=" background-color: #745a95;">
                         <div class="name">貫月矢</div>
                     </div>
                 </div>
-                <div id="sword">
+                <div id="sword" class="weapons-container">
                     <div class="items">
                         <img src="EquipIcon/UI_EquipIcon_Sword_Amenoma.png" style=" background-color: #af6f2a;">
                         <div class="name">波亂月白經津</div>
@@ -110,10 +145,9 @@
         </div>
 
         <div id="display">
-
         </div>
     </div>
-
+    <script src="select.js"></script>
 </body>
 
 </html>
