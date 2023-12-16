@@ -3,221 +3,734 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>千岩牢固</title>
-    <link rel="stylesheet" type="text/css" href="Artifact.css">
+    <title>聖遺物</title>
+    <style>
+        div {
+            display: block;
+        }
+
+        body {
+            background-color: #352F44;
+        }
+
+        .genshin-show-artifact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .artifact-card {
+            left: 140px;
+            height: 150px;
+            width: 400px;
+            position: relative;
+            border: 1px solid #5C5470;
+            margin: 10px;
+            scroll-behavior: smooth;
+            background-color: #584f70;
+            border-radius: 12px;
+        }
+
+        .d-img-main {
+            left: 20px;
+            top: 50%;
+            height: 88px;
+            margin: -20px 10px 10px 10px;
+            border-radius: 10px;
+            background-color: #af6f2a;
+        }
+
+        .d-img-show {
+            flex-direction: row-reverse;
+
+            position: relative;
+            padding: 0px;
+            top: 100%;
+            flex: auto;
+            height: 40px;
+            margin: 8px;
+            border-radius: 10px;
+            background-color: #af6f2a;
+        }
+
+        .drop-icon-with-star {
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .text {
+            position: relative;
+            padding: 0px;
+            left: 112px;
+            top: 5px;
+            color: #FAF0E6;
+            margin: 3px;
+        }
+
+        .text1 {
+            font-size: 12px;
+            position: absolute;
+            top: 95px;
+            width: 95%;
+            margin: 10px;
+            line-height: 16px;
+            color: #FAF0E6;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .artifact-card:hover {
+            border: 5px solid #584f70;
+        }
+
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header">
-        <img alt="" src="../Artifact/Tenacity of the Millelith_flower_of_life_icon.png" class="d-img-main">
-        <div class="main-text">
-            <div style="font-size: 32px; ">
-                <span>千岩牢固</span>
-            </div>
-            <div class="tag" style="margin: 5px;">
-                攻擊力
-            </div>
-            <div class="tag" style="margin: 5px;">
-                生命值
-            </div>
-            <div class="tag" style="margin: 5px;">
-                護盾強效
-            </div>
-        </div>
-    </div>
-    <div class="info">
-        <div class="base-info-item">
-            <div class="base-info-item-key">
-                名稱
-            </div>
-            <div class="base-info-item-value">
-                <p>
-                    千岩牢固</p>
-            </div> <!--<hr style="width: 95%;"/>-->
-        </div>
-        <div class="base-info-item">
-            <div class="base-info-item-key">稀有度</div>
-            <div class="base-info-item-value">
-                <p>4星/5星</p>
-            </div> <!---->
-        </div>
-        <div class="base-info-item">
-            <div class="base-info-item-key">來源</div>
-            <div class="base-info-item-value">
-                <p>山脊守望:祝聖祕境:不移Ⅲ至IV機率掉落。</p>
-            </div> <!---->
-        </div>
-        <div class="base-info-item">
-            <div class="base-info-item-key">2件套裝</div>
-            <div class="base-info-item-value">
-                <p>
-                    生命值提升20%。</p>
-            </div> <!---->
-        </div>
-        <div class="base-info-item">
-            <div class="base-info-item-key">4件套裝</div>
-            <div class="base-info-item-value">
-                <p>元素戰技命中敵人後，使隊伍中附近的所有角色攻擊力提升20%，護盾強效提升30%，持續3秒。該效果每0.5秒至多觸發一次。裝備此聖遺物套裝的角色處於隊伍後台時，依然能觸發該效果。
-                </p>
-            </div> <!---->
-        </div>
-    </div>
-    <div class="info" style="display: flex;flex-wrap: wrap;">
-        <div class="e-artifact-list-item">
-            <div class="d-img-show-Artifact">
-                <img height="200px" loading="eager" src="../Artifact/Tenacity of the Millelith_flower_of_life_icon.png"
-                    title="勳績之花" onclick="flower()">
-            </div>
-            <div class="d-img-show-Artifact">
-                <img height="200px" loading="eager" src="../Artifact/Tenacity of the Millelith_plume_of_death_icon.png"
-                    title="昭武翎羽" onclick="plume()">
-            </div>
-            <div class="d-img-show-Artifact">
-                <img height="200px" loading="eager" src="../Artifact/Tenacity of the Millelith_sands_of_eon_icon.png"
-                    title="金銅時晷" onclick="sands()">
-            </div>
-            <div class="d-img-show-Artifact">
-                <img height="200px" loading="eager" src="../Artifact/Tenacity of the Millelith_goblet_of_eonothem_icon.png"
-                    title="盟誓金爵" onclick="goblet()">
-            </div>
-            <div class="d-img-show-Artifact">
-                <img height="200px" loading="eager" src="../Artifact/Tenacity of the Millelith_circlet_of_logos_icon.png"
-                    title="將帥兜鍪" onclick="circlet()">
-            </div>
-        </div>
-        <div class="e-artifact-list-item">
-            <div>
-                <img id="Artifactimg" src="../Artifact/Tenacity of the Millelith_flower_of_life_icon.png" title="勳績之花"
-                    class="d-img-story">
-            </div>
-            <div class="story-text">
-                <div id="title" class="e-artifact-list-item-title">
-                    勳績之花
+    <div class="genshin-show-artifact-wrapper">
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    黃金劇團<br />
                 </div>
-                <div id="intro" class="e-artifact-list-item-pos">
-                    以金箔製成的精緻花朵，象徵了其主人所獲得的功勳與榮譽。
+                <div>
+                    <img alt="" src="Artifact/Golden Troupe_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Golden Troupe_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Golden Troupe_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Golden Troupe_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Golden Troupe_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
                 </div>
-                <div id="story">
-                    <br />
-                    在峭岩岸然作歌的過去，層岩巨淵曾有星辰隕落。星鐵自無際夜空垂落而下，將塵土化為琉璃晶砂。凡人朝生暮死，帝君卻親手託付千岩軍守護礦脈之責。深淵如洪流般湧出，千岩軍則護送眾多民眾疏散逃離。在礦工們的故事中，少數留在層岩巨淵的斷後兵士們，亦與無名的夜叉一併奮戰，最終同樣犧牲在峭岩之間。即使山川隨年月而改變，凡人與仙人的名姓也被遺忘，其勳績卻永無磨滅之時，正如這金箔之花般堅韌閃耀。自災厄平息至今已有五百年，港城堅壁一如往日久安。兵士們驕傲佩戴的金花，正是先人的高貴犧牲的標誌。 
+                <div class="text1">
+                    2 元素戰技造成的傷害提升20%。</br>
+                    4 元素戰技造成的傷害提升25%；此外，處於隊伍後臺時，元素戰技造成的傷害還將進一步提升25%，該效果將在登場後2秒移除。
                 </div>
             </div>
-        </div>
-    </div>
+        </a>
 
-    <div class="info" style="justify-content: flex-start;">
-        <div class="role">
-            <article>
-                <a href="">
-                    <img alt="" src="../AvatarIcon/UI_AvatarIcon_Zhongli.png" class="d-img-show">
-                    鐘離
-                </a>
-            </article>
-            <span class="role-text1">
-                主<br>詞<br>條<br>推<br>薦<br>
-            </span>
-            <div class="story-text">
-                <div>
-                    <div class="role-tag">
-                        &nbsp;
-                        4&nbsp;件套
-                        &nbsp;
-                    </div>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    逐影獵人
                 </div>
-                <div>
-                    時之沙：生命值 <br>
-                    空之杯：岩元素傷害加成/生命值<br>
-                    理之冠：暴擊率/暴擊傷害/生命值 <br>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Marechaussee Hunter_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Marechaussee Hunter_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Marechaussee Hunter_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Marechaussee Hunter_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Marechaussee Hunter_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 普通攻擊與重擊造成的傷害提高15%。<br />
+                    4 目前生命值提升或降低時，暴擊率提升12%，該效果持續5秒，至多疊加3次。
                 </div>
             </div>
-        </div>
-        <div class="role">
-            <article>
-                <a href="">
-                    <img alt="" src="../AvatarIcon/UI_AvatarIcon_Layla.png" class="d-img-show"
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    花海甘露之光
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Vourukasha's Glow_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Vourukasha's Glow_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vourukasha's Glow_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vourukasha's Glow_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vourukasha's Glow_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 生命值提升20%。</br>
+                    4 元素戰技與元素爆發造成的傷害提升10%；裝備者受到傷害後的5秒內，上述傷害提升效果提高80%，該提高效果至多疊加5層，每層持續時間獨立計算，處於隊伍後臺時依然能觸發該效果。 </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    水仙之夢
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Nymph's Dream_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Nymph's Dream_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Nymph's Dream_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Nymph's Dream_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Nymph's Dream_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%水元素傷害加成。</br>
+                    4
+                    普通攻擊、重擊、下落攻擊、元素戰技或元素爆發命中敵人後，將產生1層持續8秒的「鏡中水仙」效果。處於1/2/3層及以上「鏡中水仙」效果下時，攻擊力將提高7%/16%/25%，水元素傷害加成提升4%/9%/15%。由普通攻擊、重擊、下落攻擊、元素戰技或元素爆發產生的「鏡中水仙」將分別獨立存在。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    沙上樓閣史話<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Desert Pavilion Chronicle_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Desert Pavilion Chronicle_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Desert Pavilion Chronicle_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Desert Pavilion Chronicle_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Desert Pavilion Chronicle_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%風元素傷害加成。</br>
+                    4 重擊命中敵人後，該角色的普通攻擊速度提升10%，普通攻擊、重擊與下落攻擊造成的傷害提升40%，持續15秒。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    樂園遺落之花<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Flower of Paradise Lost_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Flower of Paradise Lost_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Flower of Paradise Lost_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Flower of Paradise Lost_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Flower of Paradise Lost_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 元素精通提高80點。</br>
+                    4
+                    裝備者綻放、超綻放、烈綻放反應造成的傷害提升40%。此外，裝備者觸發綻放、超綻放、烈綻放後，上述效果帶來的加成提升25%，該效果持續10秒，至多疊加4次，每1秒至多觸發一次。裝備者處於隊伍後臺時依然能觸發該效果。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    飾金之夢<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Gilded Dreams_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Gilded Dreams_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Gilded Dreams_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Gilded Dreams_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Gilded Dreams_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 元素精通提高80點。</br>
+                    4
+                    觸發元素反應後的8秒內，會根據隊伍內其他角色的元素類型，使裝備者獲得強化：隊伍中每包含1個和裝備者同類元素的角色，攻擊力提升14%：每包含1個和裝備者不同元素類型的角色，元素精通提升50點。上述每類效果至多計算3個角色。該效果每8秒至多觸發一次。裝備者處於隊伍後臺時，依然能觸發該效果。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    深林的記憶<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Deepwood Memories_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Deepwood Memories_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Deepwood Memories_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Deepwood Memories_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Deepwood Memories_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 深林的記憶</br>
+                    4 元素戰技或元素爆發命中敵人後，使命中目標的草元素抗性降低30%，持續8秒。裝備者處於隊伍後臺時，依然能觸發該效果。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Vermillion Hereafter.html">
+            <div class="artifact-card">
+                <div class="text">
+                    辰砂往生錄<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Vermillion Hereafter_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Vermillion Hereafter_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vermillion Hereafter_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vermillion Hereafter_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Vermillion Hereafter_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 攻擊力提高18%。</br>
+                    4
+                    施放元素爆發後，將產生持續16秒的「潛光」效果：攻擊力提升8%；並在角色的生命值降低時，攻擊力進一步提升10%，至多依此方式提升4次，每0.8秒至多觸發一次。「潛光」效果將在角色退場時消失；持續期間再次施放元素爆發，將移除原有的「潛光」。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Echoes of an Offering.html">
+            <div class="artifact-card">
+                <div class="text">
+                    來歆餘響<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Echoes of an Offering_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Echoes of an Offering_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Echoes of an Offering_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Echoes of an Offering_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Echoes of an Offering_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 攻擊力提高18%。</br>
+                    4
+                    普通攻擊命中敵人時，有36%機率觸發「幽谷祝祀」：普通攻擊造成的傷害提高，傷害提高值為攻擊力的70%，該效果將在普通攻擊造成傷害後的0.05秒後清除。普通攻擊未觸發「幽谷祝祀」時，會使下次觸發機率提升20%；0.2秒內至多判定1次觸發與否。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Husk of Opulent Dreams.html">
+            <div class="artifact-card">
+                <div class="text">
+                    華館夢醒形骸記<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Husk of Opulent Dreams_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Husk of Opulent Dreams_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Husk of Opulent Dreams_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Husk of Opulent Dreams_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Husk of Opulent Dreams_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 防禦力提高30%。</br>
+                    4
+                    裝備此聖遺物套裝的角色在以下情況下，將獲得「問答」效果：在場上用岩元素攻擊命中敵人後獲得一層，每0.3秒至多觸發一次；在隊伍後台中，每3秒獲得一層。問答至多疊加4層，每層能提供6%防禦力與6%岩元素傷害加成。每6秒，若未獲得問答效果，將損失一層。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Golden Troupe.html">
+            <div class="artifact-card">
+                <div class="text">
+                    海染硨磲<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Ocean-Hued Clam_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Ocean-Hued Clam_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Ocean-Hued Clam_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Ocean-Hued Clam_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Ocean-Hued Clam_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 治療加成提高15%。</br>
+                    4
+                    裝備此聖遺物套裝的角色對隊伍中的角色進行治療時，將產生持續3秒的海染泡沫，記錄治療的生命值回復量（包括溢出值）。持續時間結束時，海染泡沫將會爆炸，對周圍的敵人造成90%累計回復量的傷害（該傷害結算方式同感電、超導等元素反應，但不受元素精通、等級或反應傷害加成效果影響）。每3.5秒至多產生一個海染泡沫；海染泡沫至多記錄30000點回復量，含溢出部分的治療量；自己的隊伍中同時至多存在一個海染泡沫。裝備此聖遺物套裝的角色處於隊伍後台時，依然能觸發該效果。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Shimenawa's Reminiscence.html">
+            <div class="artifact-card">
+                <div class="text">
+                    追憶之注連<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Shimenawa's Reminiscence_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Shimenawa's Reminiscence_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Shimenawa's Reminiscence_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Shimenawa's Reminiscence_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Shimenawa's Reminiscence_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 攻擊力提高18%。</br>
+                    4 施放元素戰技時，如果角色的元素能量高於或等於15點，則會流失15點元素能量，使接下來的10秒內，普通攻擊、重擊、下落攻擊造成的傷害提高50%，持續期間內該效果不會再次觸發。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Emblem of Severed Fate.html">
+            <div class="artifact-card">
+                <div class="text">
+                    絕緣之旗印<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Emblem of Severed Fate_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Emblem of Severed Fate_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Emblem of Severed Fate_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Emblem of Severed Fate_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Emblem of Severed Fate_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 元素充能效率提高20%。</br>
+                    4 基於元素充能效率的25%，提高元素爆發造成的傷害。至多依此方式獲得75%提升。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Tenacity of the Millelith.html">
+            <div class="artifact-card">
+                <div class="text">
+                    千岩牢固<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Tenacity of the Millelith_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Tenacity of the Millelith_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Tenacity of the Millelith_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Tenacity of the Millelith_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Tenacity of the Millelith_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 生命值提升20%</br>
+                    4 元素戰技命中敵人後，使隊伍中附近的所有角色攻擊力提升20%，護盾強效提升30%，持續3秒。該效果每0.5秒至多觸發一次。裝備此聖遺物套裝的角色處於隊伍後台時，依然能觸發該效果。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Pale Flame.html">
+            <div class="artifact-card">
+                <div class="text">
+                    蒼白之火<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Pale Flame_flower_of_life_icon.png" decoding="async" class="d-img-main">
+                    <img alt="" src="Artifact/Pale Flame_plume_of_death_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Pale Flame_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Pale Flame_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Pale Flame_circlet_of_logos_icon.png" decoding="async" class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 造成的物理傷害提高25%。</br>
+                    4 元素戰技命中敵人後，攻擊力提升9%。該效果持續7秒，至多疊加兩層，每0.3秒至多觸發一次。疊滿兩層時，2件套裝的效果提升100%。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    冰風迷途的勇士<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Blizzard Strayer_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Blizzard Strayer_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Blizzard Strayer_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Blizzard Strayer_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Blizzard Strayer_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 冰風迷途的勇士</br>
+                    4 攻擊處於冰元素影響下的敵人時，暴擊率提高20%；若敵人處於凍結狀態下，則暴擊率額外提高20%。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    沉淪之心<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Heart of Depth_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Heart of Depth_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Heart of Depth_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Heart of Depth_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Heart of Depth_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%水元素傷害加成。</br>
+                    4 施放元素戰技後的15秒內，普通攻擊與重擊造成的傷害提高30%。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    染血的騎士道<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Gladiator's Finale_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Gladiator's Finale_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Gladiator's Finale_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Gladiator's Finale_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Gladiator's Finale_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 造成的物理傷害提高25%。</br>
+                    4 擊敗敵人後的10秒內，施放重擊時不消耗體力，且重擊造成的傷害提升50%。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    昔日宗室之儀<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Noblesse Oblige_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Noblesse Oblige_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Noblesse Oblige_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Noblesse Oblige_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Noblesse Oblige_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 元素爆發造成的傷害提升20%。</br>
+                    4 施放元素爆發後，隊伍中所有角色攻擊力提升20%，持續12秒。該效果不可疊加。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    熾烈的炎之魔女<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Crimson Witch of Flames_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Crimson Witch of Flames_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Crimson Witch of Flames_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Crimson Witch of Flames_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Crimson Witch of Flames_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%火元素傷害加成。</br>
+                    4 超載、燃燒、烈綻放反應造成的傷害提升40%，蒸發、融化反應的加成係數提高15%。施放元素戰技後的10秒內，2件套的效果提高50%，該效果最多疊加3次。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    悠古的磐岩<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Archaic Petra_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Archaic Petra_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Archaic Petra_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Archaic Petra_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Archaic Petra_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%岩元素傷害加成。</br>
+                    4 獲得結晶反應形成的晶片時，隊伍中所有角色獲得35%對應元素傷害加成，持續10秒。同時只能通過該效果獲得一種元素傷害加成。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    逆飛的流星<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Retracing Bolide_Retracing Bolide_flower_of_life_icon.png"
+                        decoding="async" class="d-img-main">
+                    <img alt="" src="Artifact/Retracing Bolide_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Retracing Bolide_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Retracing Bolide_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Retracing Bolide_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+                </div>
+                <div class="text1">
+                    2 護盾強效提高35%。</br>
+                    4 處於護盾庇護下時，額外獲得40%普通攻擊和重擊傷害加成。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Viridescent Venerer.html">
+            <div class="artifact-card">
+                <div class="text">
+                    翠綠之影<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Viridescent Venerer_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Viridescent Venerer_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Viridescent Venerer_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Viridescent Venerer_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Viridescent Venerer_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%風元素傷害加成。</br>
+                    4 擴散反應造成的傷害提升60%。根據擴散的元素類型，降低受到影響的敵人40%的對應元素抗性，持續10秒。
+                </div>
+            </div>
+        </a>
+        <a href="Artifactcode/Maiden Beloved.html">
+            <div class="artifact-card">
+                <div class="text">
+                    被憐愛的少女<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Maiden Beloved_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Maiden Beloved_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Maiden Beloved_sands_of_eon_icon.png" decoding="async" class="d-img-show">
+                    <img alt="" src="Artifact/Maiden Beloved_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Maiden Beloved_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 角色造成的治療效果提升15%。</br>
+                    4 施放元素戰技或元素爆發後的10秒內，隊伍中所有角色受治療效果加成提高20%。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    如雷的盛怒<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Thundering Fury_flower_of_life_icon.png" decoding="async"
+                        class="d-img-main">
+                    <img alt="" src="Artifact/Thundering Fury_plume_of_death_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Thundering Fury_sands_of_eon_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Thundering Fury_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show">
+                    <img alt="" src="Artifact/Thundering Fury_circlet_of_logos_icon.png" decoding="async"
+                        class="d-img-show">
+
+                </div>
+                <div class="text1">
+                    2 獲得15%雷元素傷害加成。</br>
+                    4 超載、感電、超導、超綻放反應造成的傷害提升40%，超激化反應帶來的傷害提升提高20%。觸發上述元素反應或原激化反應時，元素戰技冷卻時間減少1秒。該效果每0.8秒最多觸發一次。
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="artifact-card">
+                <div class="text">
+                    教官<br />
+                </div>
+                <div class="d-img">
+                    <img alt="" src="Artifact/Instructor_flower_of_life_icon.png" decoding="async" class="d-img-main"
                         style="background-color: #745a95;">
-                    萊依拉
-                </a>
-            </article>
-            <span class="role-text1">
-                主<br>詞<br>條<br>推<br>薦<br>
-            </span>
-            <div class="story-text">
-                <div>
-                    <div class="role-tag">
-                        &nbsp;
-                        4&nbsp;件套
-                        &nbsp;
-                    </div>
+                    <img alt="" src="Artifact/Instructor_plume_of_death_icon.png" decoding="async" class="d-img-show"
+                        style="background-color: #745a95;">
+                    <img alt="" src="Artifact/Instructor_sands_of_eon_icon.png" decoding="async" class="d-img-show"
+                        style="background-color: #745a95;">
+                    <img alt="" src="Artifact/Instructor_goblet_of_eonothem_icon.png" decoding="async"
+                        class="d-img-show" style="background-color: #745a95;">
+                    <img alt="" src="Artifact/Instructor_circlet_of_logos_icon.png" decoding="async" class="d-img-show"
+                        style="background-color: #745a95;">
+
                 </div>
-                <div>
-                    時之沙：生命值 <br>
-                    空之杯：生命值 <br>
-                    理之冠：生命值 <br>
+                <div class="text1">
+                    2 元素精通提高80點。</br>
+                    4 觸發元素反應後，隊伍中所有角色的元素精通提高120點，持續8秒。
                 </div>
             </div>
-        </div>
-
+        </a>
     </div>
-    <br>
-    <br>
-    <script>
-        let printimg;
-        let printtitle;
-        let printintro;
-        let printstory;
-        let Artifact = "Tenacity of the Millelith";
-        function flower() {
-            printimg = "../Artifact/" + Artifact + "_flower_of_life_icon.png";
-            printtitle = "勳績之花";
-            printintro = "以金箔製成的精緻花朵，象徵了其主人所獲得的功勳與榮譽。";
-            printstory = "<br/>" +
-                "在峭岩岸然作歌的過去，層岩巨淵曾有星辰隕落。星鐵自無際夜空垂落而下，將塵土化為琉璃晶砂。凡人朝生暮死，帝君卻親手託付千岩軍守護礦脈之責。深淵如洪流般湧出，千岩軍則護送眾多民眾疏散逃離。在礦工們的故事中，少數留在層岩巨淵的斷後兵士們，亦與無名的夜叉一併奮戰，最終同樣犧牲在峭岩之間。即使山川隨年月而改變，凡人與仙人的名姓也被遺忘，其勳績卻永無磨滅之時，正如這金箔之花般堅韌閃耀。自災厄平息至今已有五百年，港城堅壁一如往日久安。兵士們驕傲佩戴的金花，正是先人的高貴犧牲的標誌。 ";
-            print();
-        }
-        function plume() {
-            printimg = "../Artifact/" + Artifact + "_plume_of_death_icon.png";
-            printtitle = "昭武翎羽";
-            printintro = "在儀仗場合佩戴的鷹翎，用以向外人顯明璃月港的威嚴與決心。"
-            printstory = "<br/>" +
-                "翱翔高天的猛禽遺落的翎羽，被千岩軍作為武勳的標誌而佩戴起來。此種翎羽僅在儀仗場合佩戴，用以鼓舞民眾，向外國來客顯示威嚴。傳說千岩軍在禮儀場合佩戴的翎羽，最初來自無名的夜叉。夜叉在與深淵爪牙纏鬥時散落的翎羽，被視為希望的象徵。最終，勇猛的夜叉與無畏的凡人們皆沉睡在了深黑的淵藪。帝君感其犧牲，為之沉默良久，山石群岩亦悄然呢喃吁嘆。民間亦有流言稱守護層岩巨淵的無名夜叉並非受帝君之命，而是為了救贖久遠的罪愆，為曾經的怯懦與逃避付出代償。不論真相為何，曾經翔游群雲的夜叉已回歸了自在的雲霧。在巨淵之下永眠的兵士，也就此永遠存在流變的神話之中。";
-            print();
-        }
-        function sands() {
-            printimg = "../Artifact/" + Artifact + "_sands_of_eon_icon.png";
-            printtitle = "金銅時晷";
-            printintro = "外觀樸素的計時道具，在戰亂的時代，一度是千岩軍的制式裝備。";
-            printstory = "<br/>" +
-                "驅以日月之光的堅定時計，在白日無明的日子也能捕捉光芒。璃月被漆黑惡意威脅之刻，這尊時晷讓戰士記住白晝的溫暖。在夜叉身側作戰，凡人兵士亦難免身染業障，或遭殺伐波及。為避免被殺業吞噬，千岩兵士以時晷默默記錄著廝殺的時刻。以統一的步調與規律，前一批凡人兵士撤下，便有下批換上。如是進退如一直至巨淵深處，夜叉與勇武之士並肩隕落之地。百年之後，這尊時晷被礦工發掘而出，灼灼星光下閃耀著金石光澤。市井傳說稱有著黑袍的藏家行走街市，以高價將此種金銅時晷收購。也有賣家試圖打聽其間原因，卻皆被其人以各種藉口說辭巧妙攔回，或許此人的目的為何，只有不息的時間終能做出足夠合理的解答吧。";
-            print();
-        }
-        function goblet() {
-            printimg = "../Artifact/" + Artifact + "_goblet_of_eonothem_icon.png";
-            printtitle = "盟誓金爵";
-            printintro = "千岩軍用以盟誓的金爵，依舊殘留著絲絲酒香。";
-            printstory = "<br/>" +
-                "千岩軍初立的過去，璃月大地尚未盡褪蠻荒。城鎮、鄉村與部族的長老曾以金爵彼此盟誓。作為對岩王帝君的效忠，對同胞民眾的責任，自各處選拔出勇健之士組織成軍，號曰千岩。與夜叉並肩的那一戰中，斷後的將士也曾以金爵飲下美酒，向慈愛威嚴的岩王敬最後一杯，隨即衝向深淵，義無反顧。數百年後，自負的冒險家將之自巨淵深處取回，稍加洗濯，金爵在百年之間竟從未破碎鏽蝕，亦未被漆黑的氣息浸透。數百年後，當璃月人再度談起災厄年代的往事，談起那無名的夜叉，談起來自不同背景、不同地域的英雄如何團結一心，對抗深淵浪潮…這尊金爵便是不可繞開的話題，其中歃盟的血水恍若依舊清亮無塵。";
-            print();
-        }
-        function circlet() {
-            printimg = "../Artifact/" + Artifact + "_circlet_of_logos_icon.png";
-            printtitle = "將帥兜鍪";
-            printintro = "年代久遠的華麗頭盔，洗淨塵沙後依舊明亮如新。";
-            printstory = "<br/>" +
-                "與未曾留下名號的夜叉一併奮戰的將帥，偕屈指可數的同袍為了守護而共同隕落。為了保障難民能夠安全撤離，不辜負岩主的目光，頭戴兜鍪的首領們率先向深淵刺出了手中的長槍。大災降臨琉璃之地，悠古的仇讎泉湧而出。夜叉應帝君之命，與深淵的扭曲造物血戰。直至最後一滴血亦匯入大地，將污穢滌除，隨著深淵的退潮，琉璃砂終又流露出光澤。當層岩巨淵上空的重重陰翳消散，夜叉就此消失無蹤。在沙場留下兜鍪的將帥及兵士，亦永遠地安眠在此地。";
-            print();
-        }
-        function print() {
-            let Artifactimg = document.getElementById("Artifactimg");
-            let title = document.getElementById("title");
-            let intro = document.getElementById("intro");
-            let story = document.getElementById("story");
-            story.innerHTML = printstory;
-            intro.innerHTML = printintro;
-            title.innerHTML = printtitle;
-            Artifactimg.setAttribute("src", printimg);
-        }
-    </script>
+    <script></script>
 
 </body>
 
