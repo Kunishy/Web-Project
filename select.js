@@ -261,7 +261,7 @@ async function display(item) {
         + '<option value="50">50</option>'
         + '<option value="60">60</option>'
         + '<option value="70">70</option>'
-        + '<option value="80">80</option></select><span>~</span>'
+        + '<option value="80">80</option></select><span>&nbsp;~&nbsp;</span>'
         + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
         + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
         + '<option value="20">20</option>'
