@@ -223,15 +223,15 @@ const three = {
     w4: [0, 0, 0, 0, 0, 0, 3],
 };
 
-function display(item) {
+async function display(item) {
     let output = "";
     output = '<div class="display-container">'
-        + '<img src="EquipIcon/UI_EquipIcon_' + EngName[item] + '.png" width="100px>'
+        + '<img src="EquipIcon/UI_EquipIcon_' + EngName[item] + '.png" width="100px">'
         + '<div class="text-container">'
         + '<div id="chName" style="font-size:20px">' + item + '</div>'
         + '<div>選擇等級</div><div>'
         + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-        + 'onchange="updateLevelOptions(\'start\')">'
+        + 'onchange="updateLevelOptions(\'start\', \'' + item + '\')">'
         + '<option value="1" selected>1</option>'
         + '<option value="20">20</option>'
         + '<option value="40">40</option>'
@@ -240,7 +240,7 @@ function display(item) {
         + '<option value="70">70</option>'
         + '<option value="80">80</option></select><span>~</span>'
         + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-        + 'onchange="updateLevelOptions(\'end\')">'
+        + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
         + '<option value="20">20</option>'
         + '<option value="40">40</option>'
         + '<option value="50">50</option>'
@@ -249,15 +249,21 @@ function display(item) {
         + '<option value="80">80</option>'
         + '<option value="90" selected>90</option></select></div>'
         + '</div></div><hr><div>計算結果</div>'
-        + '<div class="material">';
+        + '<div class="material" id="material">';
+    output = await update(1, 90, output, item);
+    document.getElementById("display").innerHTML = output;
+}
+
+function update(start, end, output, item)
+{
     let add = [];
     let x = document.getElementById(item);
     if (x.classList.contains("five")) {
-        add = sumValuesBetween(five, 1, 90);
+        add = sumValuesBetween(five, start, end);
     } else if (x.classList.contains("four")) {
-        add = sumValuesBetween(four, 1, 90);
+        add = sumValuesBetween(four, start, end);
     } else if (x.classList.contains("three")) {
-        add = sumValuesBetween(three, 1, 90);
+        add = sumValuesBetween(three, start, end);
     }
     output += printMaterial("摩拉", "其他/摩拉.png", add[0].sum + 'k');
     output += printMaterial("魔礦", "其他/魔礦.png", add[1].sum);
@@ -268,10 +274,10 @@ function display(item) {
     output = printElement(result2, add, output);
     const result3 = findArrayIndex(item, weapon);
     output = printElement(result3, add, output);
-    document.getElementById("display").innerHTML = output;
+    return output;
 }
 
-function updateLevelOptions(type) {
+async function updateLevelOptions(type, item) {
     const startSelect = document.getElementById('level-start');
     const endSelect = document.getElementById('level-end');
 
@@ -293,6 +299,16 @@ function updateLevelOptions(type) {
             }
         }
     }
+    let materialContainer = "";
+    materialContainer = update(startValue, endValue, materialContainer, item);
+    document.getElementById("material").innerHTML = materialContainer;
+}
+
+function extractMaterialSection(output) {
+    const startIndex = output.indexOf('<div class="material">');
+    const endIndex = output.indexOf('</div>', startIndex) + '</div>'.length;
+
+    return output.substring(startIndex, endIndex);
 }
 
 function findArrayIndex(word, arrays) {
