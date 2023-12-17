@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>染血的騎士道</title>
+    <link rel="stylesheet" type="text/css" href="Artifact.css">
+</head>
+
+<body>
+    <div class="header">
+        <img alt="" src="../Artifact/Bloodstained Chivalry_flower_of_life_icon.png" class="d-img-main">
+        <div class="main-text">
+            <div style="font-size: 32px; ">
+                <span>染血的騎士道</span>
+            </div>
+            <div class="tag" style="margin: 5px;">傷害增加</div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="base-info-item">
+            <div class="base-info-item-key">
+                名稱
+            </div>
+            <div class="base-info-item-value">
+                <p>染血的騎士道</p>
+            </div> <!--<hr style="width: 95%;"/>-->
+        </div>
+        <div class="base-info-item">
+            <div class="base-info-item-key">稀有度</div>
+            <div class="base-info-item-value">
+                <p>4星/5星</p>
+            </div> <!---->
+        </div>
+        <div class="base-info-item">
+            <div class="base-info-item-key">來源</div>
+            <div class="base-info-item-value">
+                <p>華池岩岫:祝聖祕境:岩牢Ⅲ至V機率掉落</p>
+            </div> <!---->
+        </div>
+        <div class="base-info-item">
+            <div class="base-info-item-key">2件套裝</div>
+            <div class="base-info-item-value">
+                <p>
+                    造成的物理傷害提高25%。</p>
+            </div> <!---->
+        </div>
+        <div class="base-info-item">
+            <div class="base-info-item-key">4件套裝</div>
+            <div class="base-info-item-value">
+                <p>擊敗敵人後的10秒內，施放重擊時不消耗體力，且重擊造成的傷害提升50%。
+                </p>
+            </div> <!---->
+        </div>
+    </div>
+    <div class="info" style="display: flex;flex-wrap: wrap;">
+        <div class="e-artifact-list-item">
+            <div class="d-img-show-Artifact">
+                <img height="200px" loading="eager" src="../Artifact/Bloodstained Chivalry_flower_of_life_icon.png"
+                    title="染血的鐵之心" onclick="flower()">
+            </div>
+            <div class="d-img-show-Artifact">
+                <img height="200px" loading="eager" src="../Artifact/Bloodstained Chivalry_plume_of_death_icon.png"
+                    title="染血的黑之羽" onclick="plume()">
+            </div>
+            <div class="d-img-show-Artifact">
+                <img height="200px" loading="eager" src="../Artifact/Bloodstained Chivalry_sands_of_eon_icon.png"
+                    title="騎士染血之時" onclick="sands()">
+            </div>
+            <div class="d-img-show-Artifact">
+                <img height="200px" loading="eager" src="../Artifact/Bloodstained Chivalry_goblet_of_eonothem_icon.png"
+                    title="染血騎士之杯" onclick="goblet()">
+            </div>
+            <div class="d-img-show-Artifact">
+                <img height="200px" loading="eager" src="../Artifact/Bloodstained Chivalry_circlet_of_logos_icon.png"
+                    title="染血的鐵假面" onclick="circlet()">
+            </div>
+        </div>
+        <div class="e-artifact-list-item">
+            <div>
+                <img id="Artifactimg" src="../Artifact/Bloodstained Chivalry_flower_of_life_icon.png" title="染血的鐵之心"
+                    class="d-img-story">
+            </div>
+            <div class="story-text">
+                <div id="title" class="e-artifact-list-item-title">
+                    染血的鐵之心
+                </div>
+                <div id="intro" class="e-artifact-list-item-pos">
+                    被血染黑，變得如鋼鐵一般堅硬的乾花。對故主而言，是某種紀念品吧。
+                </div>
+                <div id="story">
+                    <br />
+                    原本是尋常的白花，由獲救的仕女別在騎士胸前。但在殺伐中，被黑血反覆浸泡風乾，已經硬化了。遊俠騎士第一次打倒魔物，將受難的仕女救下時，他拒絕了酬勞，因此獲得了少女贈與的潔白的花。「騎士僅有的報酬就是踐行騎士道」「我的獎章就是這朵花，如此足矣」這朵花一直別在他的胸前，直到被鮮血反覆浸染，和騎士的銀盔甲一樣，變得像冬天的夜晚一樣黑，又和騎士的心一樣，變得像淬火後的鍛鐵一樣硬。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info" style="justify-content: flex-start;">
+       
+        <div class="role">
+            <article>
+                <a href="">
+                    <img alt="" src="../AvatarIcon/UI_AvatarIcon_Xinyan.png" class="d-img-show"
+                    style="background-color: #745a95;">
+                    辛焱
+                </a>
+            </article>
+            <span class="role-text1">
+                主<br>詞<br>條<br>推<br>薦<br>
+            </span>
+            <div class="story-text">
+                <div>
+                    <div class="role-tag">
+                        &nbsp;
+                        4&nbsp;件套
+                        &nbsp;
+                    </div>
+                </div>
+                <div>
+                    時之沙：攻擊力 <br>
+                    空之杯：物理傷害加成<br>
+                    理之冠：暴擊率/暴擊傷害  <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <script>
+        let printimg;
+        let printtitle;
+        let printintro;
+        let printstory;
+        let Artifact = "Bloodstained Chivalry";
+        function flower() {
+            printimg = "../Artifact/" + Artifact + "_flower_of_life_icon.png";
+            printtitle = "染血的鐵之心";
+            printintro = "被血染黑，變得如鋼鐵一般堅硬的乾花。對故主而言，是某種紀念品吧。";
+            printstory = "<br/>" +
+                "原本是尋常的白花，由獲救的仕女別在騎士胸前。但在殺伐中，被黑血反覆浸泡風乾，已經硬化了。遊俠騎士第一次打倒魔物，將受難的仕女救下時，他拒絕了酬勞，因此獲得了少女贈與的潔白的花。「騎士僅有的報酬就是踐行騎士道」「我的獎章就是這朵花，如此足矣」這朵花一直別在他的胸前，直到被鮮血反覆浸染，和騎士的銀盔甲一樣，變得像冬天的夜晚一樣黑，又和騎士的心一樣，變得像淬火後的鍛鐵一樣硬。";
+            print();
+        }
+        function plume() {
+            printimg = "../Artifact/" + Artifact + "_plume_of_death_icon.png";
+            printtitle = "染血的黑之羽";
+            printintro = "黏在騎士斗篷上的鴉羽。因為反覆沾染大量的黑血已經被徹底染成墨色。"
+            printstory = "<br/>" +
+                "偶然黏在染血騎士身上的無數漆黑鴉羽中的一枚。鴉是機敏的鳥類，會隨嗜血的飼主同行尋覓獵獲。最後染血騎士已經無法分辨，自己漫散的血腥味，究竟是敵人濺在他身上的血，還是自己流出的血。他終於明白，在自己長久的廝殺中，他的騎士道，使得曾經的純白騎士變成了魔物一般可怖的惡鬼。跟隨他的，只有循著他沾滿血的足跡而來的鴉群。";
+            print();
+        }
+        function sands() {
+            printimg = "../Artifact/" + Artifact + "_sands_of_eon_icon.png";
+            printtitle = "騎士染血之時";
+            printintro = "騎士曾經使用過的時計。其中的液體已經完全凝結了，失去了計時功能。";
+            printstory = "<br/>" +
+                "染血騎士踏入不見日、月、星、辰的深邃地底後，對時間僅有的參考道具。但時間最終失去了意義。這是染血的騎士最後的故事，從此他告別了人理。被血染黑的騎士明白地上已經沒有了自己的位置，因此決定深入覆滅的古國，戰死在魔物的溫床前。在世界之底，他明白了古國終末魔物起源的故事。「偉大的古國被降下了不義的懲罰」「偉大的古國子民被歪曲成了怪物」「我的騎士道，豈能容忍此等不公」「若深淵是它的名，我便效忠深淵」";
+            print();
+        }
+        function goblet() {
+            printimg = "../Artifact/" + Artifact + "_goblet_of_eonothem_icon.png";
+            printtitle = "染血騎士之杯";
+            printintro = "染血騎士持有的黯淡金屬杯皿。外壁因為煙燻與凝結的血變得漆黑如夜。";
+            printstory = "<br/>" +
+                "原本是精美的飾金銀盃，曾經刻畫了英雄的事蹟。已經因為凝血與煙燻變得漆黑，無法辨別其原貌。獵魔騎士循著災禍的狼煙，奔赴戰場打倒魔物後，燒毀坍塌的屋舍中，已經不再有等待獲救的人了。嘗了失敗苦果的騎士以廢墟中燻黑的杯皿為信物，立誓要將騎士鏟奸除惡扶弱濟貧的信條貫徹到底。";
+            print();
+        }
+        function circlet() {
+            printimg = "../Artifact/" + Artifact + "_circlet_of_logos_icon.png";
+            printtitle = "染血的鐵假面";
+            printintro = "騎士用來遮掩自己面目的鐵面具，關於面具下的容貌幾何曾有無數猜想。";
+            printstory = "<br/>" +
+                "華麗的飾金白鐵面具，曾經屬於出身顯赫的騎士。染上的黑血實在太多，已經徹底無法洗成原色了。騎士第一百次砍倒魔物，伸出手幫助受難的人時，她卻尖叫著推開了他。直到那時染血騎士才知道，他的臉龐已經在不斷戰鬥中染滿自己和敵人的血。他的面容已經在長久廝殺中變得遠比魔物更猙獰。「那就讓這副鐵面具替代我的臉吧」「讓我的騎士道守護的人不必直視」「我因為血戰，而變得可憎的面目」";
+            print();
+        }
+        function print() {
+            let Artifactimg = document.getElementById("Artifactimg");
+            let title = document.getElementById("title");
+            let intro = document.getElementById("intro");
+            let story = document.getElementById("story");
+            story.innerHTML = printstory;
+            intro.innerHTML = printintro;
+            title.innerHTML = printtitle;
+            Artifactimg.setAttribute("src", printimg);
+        }
+    </script>
+
+</body>
+
+</html>
