@@ -271,10 +271,86 @@ async function display(item) {
         + '<option value="70">70</option>'
         + '<option value="80">80</option>'
         + '<option value="90" selected>90</option></select></div>'
-        + '</div></div><hr><div>計算結果</div>'
+        + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+        + '&nbsp;推薦角色&nbsp;</button><div id="pop"></div></div>'
+        + '<hr><div>計算結果</div>'
         + '<div class="material" id="material">';
     output = await update(1, 90, output, item);
     document.getElementById("display").innerHTML = output;
+}
+
+function openPop(item)
+{
+    let popup = document.getElementById('pop');
+        
+    popup.innerHTML = '<button class="btn" onclick="closePop()" style="color: #FAF0E6;">X</button>';
+    
+    if(item === "天空之翼") {
+        popup.innerHTML += '弓系輸出角色均可拿，因其為爆率弓';
+    }else if(item === "阿莫斯之弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨<br>(專武)</div></div>'
+                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+                        + '<div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+                        + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div>'
+                        + '<div class="char"><img title="安柏" src="AvatarIcon/UI_AvatarIcon_Ambor.png" '
+                        + 'alt="安柏" style="background-color:#745a95;"><div class="charName">安柏</div></div></div>';
+    }else if(item === "終末嗟嘆之詩") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+                        + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪<br>(專武)</div></div>'
+                        + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+                        + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+                        + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+                        + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div>'
+                        + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+                        + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div>'
+                        + '<div class="char"><img title="五郎" src="AvatarIcon/UI_AvatarIcon_Gorou.png" '
+                        + 'alt="五郎" style="background-color:#745a95;"><div class="charName">五郎</div></div></div>';
+    }else if(item === "冬極白星") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+                        + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞<br>(專武)</div></div>'
+                        + '<div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+                        + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+                        + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+                        + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
+                        + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+                        + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+                        + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+                        + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div></div>';
+    }else if(item === "若水") {
+        popup.innerHTML += '(夜蘭專武)弓系輸出角色均可拿，因其為爆傷弓';
+    }else if(item === "飛雷之弦振") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="宵宮" src="AvatarIcon/UI_AvatarIcon_Yoimiya.png" '
+                        + 'alt="宵宮" style="background-color:#af6f2a;"><div class="charName">宵宮<br>(專武)</div></div>'
+                        + '<div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+                        + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div></div>';
+    }else if(item === "獵人之徑") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里<br>(專武)</div></div>'
+                        + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div></div>';
+    }else if(item === "最初的大魔術") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+                        + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼<br>(專武)</div></div>'
+                        + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+                        + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+                        + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div></div>';
+    }else if(item === "") {
+        popup.innerHTML += '';
+    }
+
+    popup.setAttribute("style", "display: block;");
+}
+
+function closePop()
+{
+    document.getElementById('pop').setAttribute("style", "display: none;");
 }
 
 function update(start, end, output, item)
