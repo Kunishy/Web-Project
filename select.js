@@ -50,7 +50,7 @@ const gray = {
     騙騙花: ["息災", "峽灣長歌", "風花之頌", "忍冬果", "黑岩戰弓", "決鬥之槍", "匣裡日月", "螭骨劍",
         "鐵蜂刺", "鐘劍", "西風獵弓", "鉞矛", "鐵影闊劍"],
 
-    野伏眾: ["波亂月白經津", "赤角石潰杵", "薙草之稻光", "霧切之迴光", "海淵終曲", "東花坊時雨", "斷浪長鰭", "惡王丸",
+    野伏眾: ["波亂月白經津", "赤角石潰杵", "薙草之稻光", "霧切之回光", "海淵終曲", "東花坊時雨", "斷浪長鰭", "惡王丸",
         "桂木斬長正", "天目影打刀"],
 
     飄浮靈: ["若水", "神樂之真意", "冬極白星", "不滅月華", "飾鐵之花", "籠釣瓶一心", "證誓之明瞳", "曚雲之月",
@@ -88,7 +88,7 @@ const purple = {
     龍蜥: ["貫虹之槊", "塵世之鎖", "無垠蔚藍之歌", "銜珠海皇", "千岩長槍", "螭骨劍", "鋼輪弓", "試作星鐮",
         "鐵蜂刺", "試作古華", "萬國諸海圖譜", "黑纓槍", "飛天大御劍", "飛天御劍"],
 
-    遺蹟機兵: ["薙草之稻光", "霧切之迴光", "漁獲", "桂木斬長正", "喜多院十文字", "天目影打刀"],
+    遺蹟機兵: ["薙草之稻光", "霧切之回光", "漁獲", "桂木斬長正", "喜多院十文字", "天目影打刀"],
 
     冬國仕女: ["不滅月華", "飛雷之弦振", "曚雲之月", "掠食者", "破魔之弓", "白辰之環"],
 
@@ -137,7 +137,7 @@ const weapon = {
     liyue_wed: ["護摩之杖", "貫虹之槊", "塵世之鎖", "落霞", "銜珠海皇", "千岩長槍", "螭骨劍", "鋼輪弓",
         "試作星鐮", "鐵鋒刺", "試作古華", "萬國諸海圖譜", "黑纓槍", "飛天大御劍", "飛天御劍"],
 
-    inazuma_mon: ["不滅月華", "霧切之迴光", "證誓之明瞳", "惡王丸", "白辰之環", "天目影打刀"],
+    inazuma_mon: ["不滅月華", "霧切之回光", "證誓之明瞳", "惡王丸", "白辰之環", "天目影打刀"],
 
     inazuma_tue: ["波亂月白經津", "赤角石潰杵", "飛雷之弦振", "東花坊時雨", "曚雲之月", "掠食者", "桂木斬長正", "破魔之弓"],
 
@@ -174,8 +174,31 @@ const EngName = {
     "嘟嘟可故事集": "Catalyst_Ludiharpastum", "白辰之環": "Catalyst_Bakufu", "證誓之明瞳": "Catalyst_Jyanome", "流浪的晚星": "Catalyst_Pleroma",
     "盈滿之實": "Catalyst_Arakalari", "遺祀玉瓏": "Catalyst_Yue", "純水流華": "Catalyst_Vorpal", "無垠蔚藍之歌": "Catalyst_DandelionPoem",
     "魔導緒論": "Catalyst_Intro", "討龍英傑譚": "Catalyst_Pulpfic", "異世界行記": "Catalyst_Lightnov", "翡玉法球": "Catalyst_Jade",
-    "甲級寶玨": "Catalyst_Phoney"/*, "":"", "":"", "":"",
-    "":"", "":"", "":"", "":""*/
+    "甲級寶玨": "Catalyst_Phoney", "天空之傲":"Claymore_Dvalin", "狼的末路":"Claymore_Wolfmound", "松籟響起之時":"Claymore_Widsith",
+    "無工之劍":"Claymore_Kunwu", "赤角石潰杵":"Claymore_Itadorimaru", "葦海信標":"Claymore_Deshret", "西風大劍":"Claymore_Zephyrus",
+    "鐘劍":"Claymore_Troupe", "祭禮大劍":"Claymore_Fossil", "宗室大劍":"", "雨裁":"Claymore_Perdue",
+    "試作古華":"Claymore_Proto", "白影劍":"Claymore_Exotic", "黑岩斬刀":"Claymore_Blackrock", "螭骨劍":"Claymore_Kione",
+    "千岩古劍":"Claymore_Lapis", "雪葬的星銀":"Claymore_Dragonfell", "銜珠海皇":"Claymore_MillenniaTuna", "桂木斬長正":"Claymore_Bakufu",
+    "瑪海菈的水色":"Claymore_Pleroma", "惡王丸":"Claymore_Maria", "森林王器":"Claymore_Arakalari", "飾鐵之花":"Claymore_Fleurfair",
+    "聊聊棒":"Claymore_BeastTamer", "浪影闊劍":"Claymore_Vorpal", "便攜動力鋸":"Claymore_Mechanic", "鐵影闊劍":"Claymore_Glaive",
+    "沐浴龍血的劍":"Claymore_Siegfry", "白鐵大劍":"Claymore_Tin", "以理服人":"Claymore_Reasoning", "飛天大御劍":"Claymore_Mitsurugi",
+    "護摩之杖":"Pole_Homa", "天空之脊":"Pole_Dvalin", "貫虹之槊":"Pole_Kunwu", "和璞鳶":"Pole_Morax",
+    "息災":"Pole_Santika", "薙草之稻光":"Pole_Narukami", "赤沙之杖":"Pole_Deshret", "匣裡滅辰":"Pole_Stardust",
+    "試作星鐮":"Pole_Proto", "流月針":"Pole_Exotic", "黑岩刺槍":"Pole_Blackrock", "決鬥之槍":"Pole_Gladiator",
+    "千岩長槍":"Pole_Lapis", "西風長槍":"Pole_Zephyrus", "宗室獵槍":"Pole_Theocrat", "龍脊長槍":"Pole_Everfrost",
+    "喜多院十文字":"Pole_Bakufu", "漁獲":"Pole_Mori", "斷浪長鰭":"Pole_Maria", "貫月矢":"Pole_Arakalari",
+    "風信之鋒":"Pole_Arakalari", "峽灣長歌":"Pole_Shanty", "公義的酬報":"Pole_Vorpal", "勘探鑽機":"Pole_Mechanic",
+    "白纓槍":"Pole_Ruby", "鉞矛":"Pole_Halberd", "黑纓槍":"Pole_Noire", "風鷹劍":"Sword_Falcon",
+    "天空之刃":"Sword_Dvalin", "蒼古自由之誓":"Sword_Widsith", "斫峰之刃":"Sword_Kunwu", "磐岩結綠":"Sword_Morax",
+    "霧切之回光":"Sword_Narukami", "波亂月白經津":"Sword_Amenoma", "聖顯之鑰":"Sword_Deshret", "裁葉萃光":"Sword_Ayus",
+    "靜水流湧之輝":"Sword_Regalis", "西風劍":"Sword_Zephyrus", "笛劍":"Sword_Troupe", "祭禮劍":"Sword_Fossil",
+    "宗室長劍":"Sword_Theocrat", "匣裡龍吟":"Sword_Rockkiller", "試作斬岩":"Sword_Proto", "鐵蜂刺":"Sword_Exotic",
+    "黑岩長劍":"Sword_Blackrock", "黑劍":"Sword_Bloodstained", "暗巷閃光":"Sword_Outlaw", "降臨之劍":"Sword_Psalmus",
+    "腐殖之劍":"Sword_Magnum", "天目影打刀":"Sword_Bakufu", "辰砂之紡錘":"Sword_Opus", "籠釣瓶一心":"Sword_Youtou",
+    "原木刀":"Sword_Arakalari", "西福斯的月光":"Sword_Pleroma", "東花坊時雨":"Sword_Kasabouzu", "狼牙":"Sword_Boreas",
+    "海淵終曲":"Sword_Vorpal", "灰河渡手":"Sword_Machination", "船塢長劍":"Sword_Mechanic", "水仙十字聖劍":"Sword_Purewill",
+    "冷刃":"Sword_Steel", "黎明神劍":"Sword_Dawn", "旅行劍":"Sword_Traveler", "暗鐵劍":"Sword_Darker",
+    "吃虎魚刀":"Sword_Sashimi", "飛天御劍":"Sword_Mitsurugi"
 };
 
 const five = {
