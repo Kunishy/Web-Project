@@ -289,7 +289,7 @@ function selectChange() {
                 + '<img loading="eager" title="女旅行者(風)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" alt="女旅行者(風)" style="background-color:#af6f2a;">'
                 + '<img loading="eager" title="男旅行者(岩)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" alt="男旅行者(岩)" style="background-color:#af6f2a;">'
                 + '<img loading="eager" title="女旅行者(岩)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" alt="女旅行者(岩)" style="background-color:#af6f2a;">'
-                + '<img loading="eager" title="羅莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" alt="羅莎莉亞" style="background-color:#745a95;">'
+                + '<img loading="eager" title="蘿莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" alt="蘿莎莉亞" style="background-color:#745a95;">'
                 + '<img loading="eager" title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" alt="溫迪" style="background-color:#af6f2a;"></div>'
                 + '<div class="weaponTitle" style="display: flex; align-items: center;">'
                 + '<img loading="eager" src="weapon/mondstadt_wed4.png" alt="Mondstadt Weapon Domain">'
