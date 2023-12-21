@@ -47,7 +47,7 @@ const gray = {
     丘丘: ["松籟響起之時", "斫峰之刃", "塵世之鎖", "狼牙", "辰砂之紡錘", "嘟嘟可故事集", "昭心", "弓藏",
         "試作星鐮", "宗室長劍", "試作古華", "流浪樂章", "彈弓", "異世界行記", "暗鐵劍", "以理服人"],
 
-    騙騙花: ["息災", "峽灣長歌", "風花之頌", "忍冬果", "黑岩戰弓", "決鬥之槍", "匣裡日月", "螭骨劍",
+    騙騙花: ["息災", "峽灣長歌", "風花之頌", "忍冬之果", "黑岩戰弓", "決鬥之槍", "匣裡日月", "螭骨劍",
         "鐵蜂刺", "鐘劍", "西風獵弓", "鉞矛", "鐵影闊劍"],
 
     野伏眾: ["波亂月白經津", "赤角石潰杵", "薙草之稻光", "霧切之回光", "海淵終曲", "東花坊時雨", "斷浪長鰭", "惡王丸",
@@ -75,7 +75,7 @@ const purple = {
         "討龍英傑譚", "沐浴龍血的劍", "黎明神劍"],
 
     遺蹟守衛: ["蒼古自由之誓", "天空之脊", "阿莫斯之弓", "狼的末路", "四風原典", "狼牙", "辰砂之紡錘", "暗巷獵手",
-        "忍冬果", "西風長槍", "西風大劍", "祭禮劍", "宗室長弓", "西風獵弓", "宗室大劍", "祭禮殘章",
+        "忍冬之果", "西風長槍", "西風大劍", "祭禮劍", "宗室長弓", "西風獵弓", "宗室大劍", "祭禮殘章",
         "反曲弓", "異世界行記", "白鐵大劍", "旅行劍"],
 
     螢術士: ["息災", "磐岩結綠", "無工之劍", "遺祀玉瓏", "龍脊長槍", "宗室獵槍", "黑岩斬刀", "匣裡滅辰",
@@ -174,31 +174,31 @@ const EngName = {
     "嘟嘟可故事集": "Catalyst_Ludiharpastum", "白辰之環": "Catalyst_Bakufu", "證誓之明瞳": "Catalyst_Jyanome", "流浪的晚星": "Catalyst_Pleroma",
     "盈滿之實": "Catalyst_Arakalari", "遺祀玉瓏": "Catalyst_Yue", "純水流華": "Catalyst_Vorpal", "無垠蔚藍之歌": "Catalyst_DandelionPoem",
     "魔導緒論": "Catalyst_Intro", "討龍英傑譚": "Catalyst_Pulpfic", "異世界行記": "Catalyst_Lightnov", "翡玉法球": "Catalyst_Jade",
-    "甲級寶玨": "Catalyst_Phoney", "天空之傲":"Claymore_Dvalin", "狼的末路":"Claymore_Wolfmound", "松籟響起之時":"Claymore_Widsith",
-    "無工之劍":"Claymore_Kunwu", "赤角石潰杵":"Claymore_Itadorimaru", "葦海信標":"Claymore_Deshret", "西風大劍":"Claymore_Zephyrus",
-    "鐘劍":"Claymore_Troupe", "祭禮大劍":"Claymore_Fossil", "宗室大劍":"", "雨裁":"Claymore_Perdue",
-    "試作古華":"Claymore_Proto", "白影劍":"Claymore_Exotic", "黑岩斬刀":"Claymore_Blackrock", "螭骨劍":"Claymore_Kione",
-    "千岩古劍":"Claymore_Lapis", "雪葬的星銀":"Claymore_Dragonfell", "銜珠海皇":"Claymore_MillenniaTuna", "桂木斬長正":"Claymore_Bakufu",
-    "瑪海菈的水色":"Claymore_Pleroma", "惡王丸":"Claymore_Maria", "森林王器":"Claymore_Arakalari", "飾鐵之花":"Claymore_Fleurfair",
-    "聊聊棒":"Claymore_BeastTamer", "浪影闊劍":"Claymore_Vorpal", "便攜動力鋸":"Claymore_Mechanic", "鐵影闊劍":"Claymore_Glaive",
-    "沐浴龍血的劍":"Claymore_Siegfry", "白鐵大劍":"Claymore_Tin", "以理服人":"Claymore_Reasoning", "飛天大御劍":"Claymore_Mitsurugi",
-    "護摩之杖":"Pole_Homa", "天空之脊":"Pole_Dvalin", "貫虹之槊":"Pole_Kunwu", "和璞鳶":"Pole_Morax",
-    "息災":"Pole_Santika", "薙草之稻光":"Pole_Narukami", "赤沙之杖":"Pole_Deshret", "匣裡滅辰":"Pole_Stardust",
-    "試作星鐮":"Pole_Proto", "流月針":"Pole_Exotic", "黑岩刺槍":"Pole_Blackrock", "決鬥之槍":"Pole_Gladiator",
-    "千岩長槍":"Pole_Lapis", "西風長槍":"Pole_Zephyrus", "宗室獵槍":"Pole_Theocrat", "龍脊長槍":"Pole_Everfrost",
-    "喜多院十文字":"Pole_Bakufu", "漁獲":"Pole_Mori", "斷浪長鰭":"Pole_Maria", "貫月矢":"Pole_Arakalari",
-    "風信之鋒":"Pole_Arakalari", "峽灣長歌":"Pole_Shanty", "公義的酬報":"Pole_Vorpal", "勘探鑽機":"Pole_Mechanic",
-    "白纓槍":"Pole_Ruby", "鉞矛":"Pole_Halberd", "黑纓槍":"Pole_Noire", "風鷹劍":"Sword_Falcon",
-    "天空之刃":"Sword_Dvalin", "蒼古自由之誓":"Sword_Widsith", "斫峰之刃":"Sword_Kunwu", "磐岩結綠":"Sword_Morax",
-    "霧切之回光":"Sword_Narukami", "波亂月白經津":"Sword_Amenoma", "聖顯之鑰":"Sword_Deshret", "裁葉萃光":"Sword_Ayus",
-    "靜水流湧之輝":"Sword_Regalis", "西風劍":"Sword_Zephyrus", "笛劍":"Sword_Troupe", "祭禮劍":"Sword_Fossil",
-    "宗室長劍":"Sword_Theocrat", "匣裡龍吟":"Sword_Rockkiller", "試作斬岩":"Sword_Proto", "鐵蜂刺":"Sword_Exotic",
-    "黑岩長劍":"Sword_Blackrock", "黑劍":"Sword_Bloodstained", "暗巷閃光":"Sword_Outlaw", "降臨之劍":"Sword_Psalmus",
-    "腐殖之劍":"Sword_Magnum", "天目影打刀":"Sword_Bakufu", "辰砂之紡錘":"Sword_Opus", "籠釣瓶一心":"Sword_Youtou",
-    "原木刀":"Sword_Arakalari", "西福斯的月光":"Sword_Pleroma", "東花坊時雨":"Sword_Kasabouzu", "狼牙":"Sword_Boreas",
-    "海淵終曲":"Sword_Vorpal", "灰河渡手":"Sword_Machination", "船塢長劍":"Sword_Mechanic", "水仙十字聖劍":"Sword_Purewill",
-    "冷刃":"Sword_Steel", "黎明神劍":"Sword_Dawn", "旅行劍":"Sword_Traveler", "暗鐵劍":"Sword_Darker",
-    "吃虎魚刀":"Sword_Sashimi", "飛天御劍":"Sword_Mitsurugi"
+    "甲級寶玨": "Catalyst_Phoney", "天空之傲": "Claymore_Dvalin", "狼的末路": "Claymore_Wolfmound", "松籟響起之時": "Claymore_Widsith",
+    "無工之劍": "Claymore_Kunwu", "赤角石潰杵": "Claymore_Itadorimaru", "葦海信標": "Claymore_Deshret", "西風大劍": "Claymore_Zephyrus",
+    "鐘劍": "Claymore_Troupe", "祭禮大劍": "Claymore_Fossil", "宗室大劍": "Claymore_Theocrat", "雨裁": "Claymore_Perdue",
+    "試作古華": "Claymore_Proto", "白影劍": "Claymore_Exotic", "黑岩斬刀": "Claymore_Blackrock", "螭骨劍": "Claymore_Kione",
+    "千岩古劍": "Claymore_Lapis", "雪葬的星銀": "Claymore_Dragonfell", "銜珠海皇": "Claymore_MillenniaTuna", "桂木斬長正": "Claymore_Bakufu",
+    "瑪海菈的水色": "Claymore_Pleroma", "惡王丸": "Claymore_Maria", "森林王器": "Claymore_Arakalari", "飾鐵之花": "Claymore_Fleurfair",
+    "聊聊棒": "Claymore_BeastTamer", "浪影闊劍": "Claymore_Vorpal", "便攜動力鋸": "Claymore_Mechanic", "鐵影闊劍": "Claymore_Glaive",
+    "沐浴龍血的劍": "Claymore_Siegfry", "白鐵大劍": "Claymore_Tin", "以理服人": "Claymore_Reasoning", "飛天大御劍": "Claymore_Mitsurugi",
+    "護摩之杖": "Pole_Homa", "天空之脊": "Pole_Dvalin", "貫虹之槊": "Pole_Kunwu", "和璞鳶": "Pole_Morax",
+    "息災": "Pole_Santika", "薙草之稻光": "Pole_Narukami", "赤沙之杖": "Pole_Deshret", "匣裡滅辰": "Pole_Stardust",
+    "試作星鐮": "Pole_Proto", "流月針": "Pole_Exotic", "黑岩刺槍": "Pole_Blackrock", "決鬥之槍": "Pole_Gladiator",
+    "千岩長槍": "Pole_Lapis", "西風長槍": "Pole_Zephyrus", "宗室獵槍": "Pole_Theocrat", "龍脊長槍": "Pole_Everfrost",
+    "喜多院十文字": "Pole_Bakufu", "漁獲": "Pole_Mori", "斷浪長鰭": "Pole_Maria", "貫月矢": "Pole_Arakalari",
+    "風信之鋒": "Pole_Windvane", "峽灣長歌": "Pole_Shanty", "公義的酬報": "Pole_Vorpal", "勘探鑽機": "Pole_Mechanic",
+    "白纓槍": "Pole_Ruby", "鉞矛": "Pole_Halberd", "黑纓槍": "Pole_Noire", "風鷹劍": "Sword_Falcon",
+    "天空之刃": "Sword_Dvalin", "蒼古自由之誓": "Sword_Widsith", "斫峰之刃": "Sword_Kunwu", "磐岩結綠": "Sword_Morax",
+    "霧切之回光": "Sword_Narukami", "波亂月白經津": "Sword_Amenoma", "聖顯之鑰": "Sword_Deshret", "裁葉萃光": "Sword_Ayus",
+    "靜水流湧之輝": "Sword_Regalis", "西風劍": "Sword_Zephyrus", "笛劍": "Sword_Troupe", "祭禮劍": "Sword_Fossil",
+    "宗室長劍": "Sword_Theocrat", "匣裡龍吟": "Sword_Rockkiller", "試作斬岩": "Sword_Proto", "鐵蜂刺": "Sword_Exotic",
+    "黑岩長劍": "Sword_Blackrock", "黑劍": "Sword_Bloodstained", "暗巷閃光": "Sword_Outlaw", "降臨之劍": "Sword_Psalmus",
+    "腐殖之劍": "Sword_Magnum", "天目影打刀": "Sword_Bakufu", "辰砂之紡錘": "Sword_Opus", "籠釣瓶一心": "Sword_Youtou",
+    "原木刀": "Sword_Arakalari", "西福斯的月光": "Sword_Pleroma", "東花坊時雨": "Sword_Kasabouzu", "狼牙": "Sword_Boreas",
+    "海淵終曲": "Sword_Vorpal", "灰河渡手": "Sword_Machination", "船塢長劍": "Sword_Mechanic", "水仙十字聖劍": "Sword_Purewill",
+    "冷刃": "Sword_Steel", "黎明神劍": "Sword_Dawn", "旅行劍": "Sword_Traveler", "暗鐵劍": "Sword_Darker",
+    "吃虎魚刀": "Sword_Sashimi", "飛天御劍": "Sword_Mitsurugi"
 };
 
 const five = {
@@ -261,7 +261,7 @@ async function display(item) {
         + '<option value="50">50</option>'
         + '<option value="60">60</option>'
         + '<option value="70">70</option>'
-        + '<option value="80">80</option></select><span>&nbsp;~&nbsp;</span>'
+        + '<option value="80">80</option></select><span>~</span>'
         + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
         + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
         + '<option value="20">20</option>'
@@ -279,82 +279,1172 @@ async function display(item) {
     document.getElementById("display").innerHTML = output;
 }
 
-function openPop(item)
-{
+function openPop(item) {
     let popup = document.getElementById('pop');
-        
+
     popup.innerHTML = '<button class="btn" onclick="closePop()" style="color: #FAF0E6;">X</button>';
-    
-    if(item === "天空之翼") {
+
+    if (item === "天空之翼") {
         popup.innerHTML += '弓系輸出角色均可拿，因其為爆率弓';
-    }else if(item === "阿莫斯之弓") {
+    } else if (item === "阿莫斯之弓") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
-                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨<br>(專武)</div></div>'
-                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
-                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
-                        + '<div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
-                        + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div>'
-                        + '<div class="char"><img title="安柏" src="AvatarIcon/UI_AvatarIcon_Ambor.png" '
-                        + 'alt="安柏" style="background-color:#745a95;"><div class="charName">安柏</div></div></div>';
-    }else if(item === "終末嗟嘆之詩") {
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨<br>(專武)</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+            + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div>'
+            + '<div class="char"><img title="安柏" src="AvatarIcon/UI_AvatarIcon_Ambor.png" '
+            + 'alt="安柏" style="background-color:#745a95;"><div class="charName">安柏</div></div></div>';
+    } else if (item === "終末嗟嘆之詩") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
-                        + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪<br>(專武)</div></div>'
-                        + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
-                        + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
-                        + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
-                        + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div>'
-                        + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
-                        + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div>'
-                        + '<div class="char"><img title="五郎" src="AvatarIcon/UI_AvatarIcon_Gorou.png" '
-                        + 'alt="五郎" style="background-color:#745a95;"><div class="charName">五郎</div></div></div>';
-    }else if(item === "冬極白星") {
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪<br>(專武)</div></div>'
+            + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div>'
+            + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+            + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div>'
+            + '<div class="char"><img title="五郎" src="AvatarIcon/UI_AvatarIcon_Gorou.png" '
+            + 'alt="五郎" style="background-color:#745a95;"><div class="charName">五郎</div></div></div>';
+    } else if (item === "冬極白星") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
-                        + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞<br>(專武)</div></div>'
-                        + '<div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
-                        + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
-                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
-                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
-                        + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
-                        + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
-                        + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
-                        + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
-                        + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
-                        + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div></div>';
-    }else if(item === "若水") {
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞<br>(專武)</div></div>'
+            + '<div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
+            + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+            + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+            + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+            + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div></div>';
+    } else if (item === "若水") {
         popup.innerHTML += '(夜蘭專武)弓系輸出角色均可拿，因其為爆傷弓';
-    }else if(item === "飛雷之弦振") {
+    } else if (item === "飛雷之弦振") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="宵宮" src="AvatarIcon/UI_AvatarIcon_Yoimiya.png" '
-                        + 'alt="宵宮" style="background-color:#af6f2a;"><div class="charName">宵宮<br>(專武)</div></div>'
-                        + '<div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
-                        + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div></div>';
-    }else if(item === "獵人之徑") {
+            + 'alt="宵宮" style="background-color:#af6f2a;"><div class="charName">宵宮<br>(專武)</div></div>'
+            + '<div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div></div>';
+    } else if (item === "獵人之徑") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
-                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里<br>(專武)</div></div>'
-                        + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
-                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div></div>';
-    }else if(item === "最初的大魔術") {
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里<br>(專武)</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div></div>';
+    } else if (item === "最初的大魔術") {
         popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
-                        + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼<br>(專武)</div></div>'
-                        + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
-                        + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
-                        + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
-                        + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
-                        + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
-                        + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div></div>';
-    }else if(item === "") {
-        popup.innerHTML += '';
+            + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼<br>(專武)</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div></div>';
+    } else if (item === "西風獵弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="五郎" src="AvatarIcon/UI_AvatarIcon_Gorou.png" '
+            + 'alt="五郎" style="background-color:#745a95;"><div class="charName">五郎</div></div>'
+            + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+            + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div></div>';
+    } else if (item === "絕弦") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
+            + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+            + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div></div>';
+    } else if (item === "祭禮弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="迪奧娜" src="AvatarIcon/UI_AvatarIcon_Diona.png" '
+            + 'alt="迪奧娜" style="background-color:#745a95;"><div class="charName">迪奧娜</div></div></div>';
+    } else if (item === "宗室長弓") {
+        popup.innerHTML += '無，不建議兌換';
+    } else if (item === "弓藏") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="宵宮" src="AvatarIcon/UI_AvatarIcon_Yoimiya.png" '
+            + 'alt="宵宮" style="background-color:#af6f2a;"><div class="charName">宵宮</div></div>'
+            + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾(站場)</div></div></div>';
+    } else if (item === "試作澹月") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+            + '<div class="char"><img title="安柏" src="AvatarIcon/UI_AvatarIcon_Ambor.png" '
+            + 'alt="安柏" style="background-color:#745a95;"><div class="charName">安柏</div></div></div>';
+    } else if (item === "鋼輪弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾(物C)</div></div></div>';
+    } else if (item === "黑岩戰弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div></div>';
+    } else if (item === "蒼翠獵弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div></div>';
+    } else if (item === "暗巷獵手") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
+            + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+            + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div>'
+            + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+            + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div></div>';
+    } else if (item === "落霞") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+            + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div>'
+            + '<div class="char"><img title="琺露珊" src="AvatarIcon/UI_AvatarIcon_Faruzan.png" '
+            + 'alt="琺露珊" style="background-color:#745a95;"><div class="charName">琺露珊</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div></div>';
+    } else if (item === "幽夜華爾滋") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾(物C)</div></div></div>';
+    } else if (item === "風花之頌") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="溫迪" src="AvatarIcon/UI_AvatarIcon_Venti.png" '
+            + 'alt="溫迪" style="background-color:#af6f2a;"><div class="charName">溫迪</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="菲謝爾" src="AvatarIcon/UI_AvatarIcon_Fischl.png" '
+            + 'alt="菲謝爾" style="background-color:#745a95;"><div class="charName">菲謝爾</div></div>'
+            + '<div class="char"><img title="柯萊" src="AvatarIcon/UI_AvatarIcon_Collei.png" '
+            + 'alt="柯萊" style="background-color:#745a95;"><div class="charName">柯萊</div></div></div>';
+    } else if (item === "破魔之弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+            + '<div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+            + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div></div>';
+    } else if (item === "曚雲之月") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="九條裟羅" src="AvatarIcon/UI_AvatarIcon_Sara.png" '
+            + 'alt="九條裟羅" style="background-color:#745a95;"><div class="charName">九條裟羅</div></div></div>';
+    } else if (item === "王下近侍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div></div>';
+    } else if (item === "竭澤") {
+        popup.innerHTML += '無';
+    } else if (item === "䴉穿之喙") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="安柏" src="AvatarIcon/UI_AvatarIcon_Ambor.png" '
+            + 'alt="安柏" style="background-color:#745a95;"><div class="charName">安柏</div></div></div>';
+    } else if (item === "烈陽之嗣") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+            + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div>'
+            + '<div class="char"><img title="甘雨" src="AvatarIcon/UI_AvatarIcon_Ganyu.png" '
+            + 'alt="甘雨" style="background-color:#af6f2a;"><div class="charName">甘雨</div></div></div>';
+    } else if (item === "靜謐之曲") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="林尼" src="AvatarIcon/UI_AvatarIcon_Liney.png" '
+            + 'alt="林尼" style="background-color:#af6f2a;"><div class="charName">林尼</div></div></div>';
+    } else if (item === "測距規") {
+        popup.innerHTML += '無';
+    } else if (item === "鴉羽弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div></div>';
+    } else if (item === "神射手之誓") {
+        popup.innerHTML += '無';
+    } else if (item === "反曲弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="迪奧娜" src="AvatarIcon/UI_AvatarIcon_Diona.png" '
+            + 'alt="迪奧娜" style="background-color:#745a95;"><div class="charName">迪奧娜</div></div></div>';
+    } else if (item === "彈弓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="宵宮" src="AvatarIcon/UI_AvatarIcon_Yoimiya.png" '
+            + 'alt="宵宮" style="background-color:#af6f2a;"><div class="charName">宵宮</div></div>'
+            + '<div class="char"><img title="達達利亞" src="AvatarIcon/UI_AvatarIcon_Tartaglia.png" '
+            + 'alt="達達利亞" style="background-color:#af6f2a;"><div class="charName">達達利亞</div></div>'
+            + '<div class="char"><img title="夜蘭" src="AvatarIcon/UI_AvatarIcon_Yelan.png" '
+            + 'alt="夜蘭" style="background-color:#af6f2a;"><div class="charName">夜蘭</div></div>'
+            + '<div class="char"><img title="提納里" src="AvatarIcon/UI_AvatarIcon_Tighnari.png" '
+            + 'alt="提納里" style="background-color:#af6f2a;"><div class="charName">提納里</div></div></div>';
+    } else if (item === "信使") {
+        popup.innerHTML += '無';
+    } else if (item === "天空之卷") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "四風原典") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉<br>(專武)</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="那維萊特" src="AvatarIcon/UI_AvatarIcon_Neuvillette.png" '
+            + 'alt="那維萊特" style="background-color:#af6f2a;"><div class="charName">那維萊特</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "塵世之鎖") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋(四命)</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div></div>';
+    } else if (item === "碧落之瓏") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="白朮" src="AvatarIcon/UI_AvatarIcon_Baizhuer.png" '
+            + 'alt="白朮" style="background-color:#af6f2a;"><div class="charName">白朮<br>(專武)</div></div></div>';
+    } else if (item === "不滅月華") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="珊瑚宮心海" src="AvatarIcon/UI_AvatarIcon_Kokomi.png" '
+            + 'alt="珊瑚宮心海" style="background-color:#af6f2a;"><div class="charName">珊瑚宮心海<br>(專武)</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉</div></div>'
+            + '<div class="char"><img title="白朮" src="AvatarIcon/UI_AvatarIcon_Baizhuer.png" '
+            + 'alt="白朮" style="background-color:#af6f2a;"><div class="charName">白朮</div></div></div>';
+    } else if (item === "神樂之真意") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子<br>(專武)</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "千夜浮夢") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲<br>(專武)</div></div>'
+            + '<div class="char"><img title="珊瑚宮心海" src="AvatarIcon/UI_AvatarIcon_Kokomi.png" '
+            + 'alt="珊瑚宮心海" style="background-color:#af6f2a;"><div class="charName">珊瑚宮心海<br>(綻放)</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉(綻放)</div></div></div>';
+    } else if (item === "圖萊杜拉的回憶") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者<br>(專武)</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div></div>';
+    } else if (item === "金流監督") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title=萊歐斯利"" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利<br>(專武)</div></div>'
+            + '<div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div></div>';
+    } else if (item === "萬世流湧大典") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="那維萊特" src="AvatarIcon/UI_AvatarIcon_Neuvillette.png" '
+            + 'alt="那維萊特" style="background-color:#af6f2a;"><div class="charName">那維萊特<br>(專武)</div></div></div>';
+    } else if (item === "西風秘典") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉</div></div>'
+            + '<div class="char"><img title="白朮" src="AvatarIcon/UI_AvatarIcon_Baizhuer.png" '
+            + 'alt="白朮" style="background-color:#af6f2a;"><div class="charName">白朮</div></div></div>';
+    } else if (item === "流浪樂章") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "祭禮殘章") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="砂糖" src="AvatarIcon/UI_AvatarIcon_Sucrose.png" '
+            + 'alt="砂糖" style="background-color:#745a95;"><div class="charName">砂糖</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="珊瑚宮心海" src="AvatarIcon/UI_AvatarIcon_Kokomi.png" '
+            + 'alt="珊瑚宮心海" style="background-color:#af6f2a;"><div class="charName">珊瑚宮心海</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉</div></div></div>';
+    } else if (item === "宗室祕法錄") {
+        popup.innerHTML += '無';
+    } else if (item === "匣裡日月") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "試作金珀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="珊瑚宮心海" src="AvatarIcon/UI_AvatarIcon_Kokomi.png" '
+            + 'alt="珊瑚宮心海" style="background-color:#af6f2a;"><div class="charName">珊瑚宮心海</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉</div></div>'
+            + '<div class="char"><img title="白朮" src="AvatarIcon/UI_AvatarIcon_Baizhuer.png" '
+            + 'alt="白朮" style="background-color:#af6f2a;"><div class="charName">白朮</div></div>'
+            + '<div class="char"><img title="那維萊特" src="AvatarIcon/UI_AvatarIcon_Neuvillette.png" '
+            + 'alt="那維萊特" style="background-color:#af6f2a;"><div class="charName">那維萊特</div></div>'
+            + '<div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div>'
+            + '<div class="char"><img title="夏洛蒂" src="AvatarIcon/UI_AvatarIcon_Charlotte.png" '
+            + 'alt="夏洛蒂" style="background-color:#745a95;"><div class="charName">夏洛蒂</div></div></div>';
+    } else if (item === "萬國諸海圖譜") {
+        popup.innerHTML += '無';
+    } else if (item === "黑岩緋玉") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "昭心") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="夏洛蒂" src="AvatarIcon/UI_AvatarIcon_Charlotte.png" '
+            + 'alt="夏洛蒂" style="background-color:#745a95;"><div class="charName">夏洛蒂</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div></div>';
+    } else if (item === "暗巷的酒與詩") {
+        popup.innerHTML += '無';
+    } else if (item === "忍冬之果") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="夏洛蒂" src="AvatarIcon/UI_AvatarIcon_Charlotte.png" '
+            + 'alt="夏洛蒂" style="background-color:#745a95;"><div class="charName">夏洛蒂</div></div></div>';
+    } else if (item === "嘟嘟可故事集") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div></div>';
+    } else if (item === "白辰之環") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div></div>';
+    } else if (item === "證誓之明瞳") {
+        popup.innerHTML += '<div class="weapons-container"><div class="weapons-container"><div class="char"><img title="夏洛蒂" src="AvatarIcon/UI_AvatarIcon_Charlotte.png" '
+            + 'alt="夏洛蒂" style="background-color:#745a95;"><div class="charName">夏洛蒂</div></div></div>';
+    } else if (item === "流浪的晚星") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="砂糖" src="AvatarIcon/UI_AvatarIcon_Sucrose.png" '
+            + 'alt="砂糖" style="background-color:#745a95;"><div class="charName">砂糖</div></div></div>';
+    } else if (item === "盈滿之實") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="砂糖" src="AvatarIcon/UI_AvatarIcon_Sucrose.png" '
+            + 'alt="砂糖" style="background-color:#745a95;"><div class="charName">砂糖</div></div></div>';
+    } else if (item === "遺祀玉瓏") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="那維萊特" src="AvatarIcon/UI_AvatarIcon_Neuvillette.png" '
+            + 'alt="那維萊特" style="background-color:#af6f2a;"><div class="charName">那維萊特</div></div>'
+            + '<div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div></div>';
+    } else if (item === "純水流華") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="八重神子" src="AvatarIcon/UI_AvatarIcon_Yae.png" '
+            + 'alt="八重神子" style="background-color:#af6f2a;"><div class="charName">八重神子</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div></div>';
+    } else if (item === "無垠蔚藍之歌") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="那維萊特" src="AvatarIcon/UI_AvatarIcon_Neuvillette.png" '
+            + 'alt="那維萊特" style="background-color:#af6f2a;"><div class="charName">那維萊特</div></div>'
+            + '<div class="char"><img title="萊歐斯利" src="AvatarIcon/UI_AvatarIcon_Wriothesley.png" '
+            + 'alt="萊歐斯利" style="background-color:#af6f2a;"><div class="charName">萊歐斯利</div></div>'
+            + '<div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div></div>';
+    } else if (item === "魔導緒論") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="納西妲" src="AvatarIcon/UI_AvatarIcon_Nahida.png" '
+            + 'alt="納西妲" style="background-color:#af6f2a;"><div class="charName">納西妲</div></div>'
+            + '<div class="char"><img title="麗莎" src="AvatarIcon/UI_AvatarIcon_Lisa.png" '
+            + 'alt="麗莎" style="background-color:#745a95;"><div class="charName">麗莎</div></div>'
+            + '<div class="char"><img title="砂糖" src="AvatarIcon/UI_AvatarIcon_Sucrose.png" '
+            + 'alt="砂糖" style="background-color:#745a95;"><div class="charName">砂糖</div></div></div>';
+    } else if (item === "討龍英傑譚") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="珊瑚宮心海" src="AvatarIcon/UI_AvatarIcon_Kokomi.png" '
+            + 'alt="珊瑚宮心海" style="background-color:#af6f2a;"><div class="charName">珊瑚宮心海</div></div>'
+            + '<div class="char"><img title="莫娜" src="AvatarIcon/UI_AvatarIcon_Mona.png" '
+            + 'alt="莫娜" style="background-color:#af6f2a;"><div class="charName">莫娜</div></div>'
+            + '<div class="char"><img title="芭芭拉" src="AvatarIcon/UI_AvatarIcon_Barbara.png" '
+            + 'alt="芭芭拉" style="background-color:#745a95;"><div class="charName">芭芭拉</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div></div>';
+    } else if (item === "異世界行記") {
+        popup.innerHTML += '無';
+    } else if (item === "翡玉法球") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="煙緋" src="AvatarIcon/UI_AvatarIcon_Feiyan.png" '
+            + 'alt="煙緋" style="background-color:#745a95;"><div class="charName">煙緋</div></div></div>';
+    } else if (item === "甲級寶玨") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="可莉" src="AvatarIcon/UI_AvatarIcon_Klee.png" '
+            + 'alt="可莉" style="background-color:#af6f2a;"><div class="charName">可莉</div></div>'
+            + '<div class="char"><img title="流浪者" src="AvatarIcon/UI_AvatarIcon_Wanderer.png" '
+            + 'alt="流浪者" style="background-color:#af6f2a;"><div class="charName">流浪者</div></div>'
+            + '<div class="char"><img title="凝光" src="AvatarIcon/UI_AvatarIcon_Ningguang.png" '
+            + 'alt="凝光" style="background-color:#745a95;"><div class="charName">凝光</div></div>'
+            + '<div class="char"><img title="鹿野院平藏" src="AvatarIcon/UI_AvatarIcon_Heizo.png" '
+            + 'alt="鹿野院平藏" style="background-color:#745a95;"><div class="charName">鹿野院平藏</div></div></div>';
+    } else if (item === "天空之傲") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div></div>';
+    } else if (item === "狼的末路") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克<br>(專武)</div></div>'
+            + '<div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "松籟響起之時") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈<br>(專武)</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "無工之劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div></div>';
+    } else if (item === "赤角石潰杵") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="荒瀧一斗" src="AvatarIcon/UI_AvatarIcon_Itto.png" '
+            + 'alt="荒瀧一斗" style="background-color:#af6f2a;"><div class="charName">荒瀧一斗<br>(專武)</div></div>'
+            + '<div class="char"><img title="諾艾爾" src="AvatarIcon/UI_AvatarIcon_Noel.png" '
+            + 'alt="諾艾爾" style="background-color:#745a95;"><div class="charName">諾艾爾</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div></div>';
+    } else if (item === "葦海信標") {
+        popup.innerHTML += '(迪希雅專武)大劍輸出角色均可拿，因其為爆率大劍';
+    } else if (item === "西風大劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="諾艾爾" src="AvatarIcon/UI_AvatarIcon_Noel.png" '
+            + 'alt="諾艾爾" style="background-color:#745a95;"><div class="charName">諾艾爾</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div></div>';
+    } else if (item === "鐘劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪希雅" src="AvatarIcon/UI_AvatarIcon_Dehya.png" '
+            + 'alt="迪希雅" style="background-color:#af6f2a;"><div class="charName">迪希雅</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div></div>';
+    } else if (item === "祭禮大劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="諾艾爾" src="AvatarIcon/UI_AvatarIcon_Noel.png" '
+            + 'alt="諾艾爾" style="background-color:#745a95;"><div class="charName">諾艾爾</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div></div>';
+    } else if (item === "宗室大劍") {
+        popup.innerHTML += '無，不建議兌換';
+    } else if (item === "雨裁") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克(烈綻放)</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤(彩虹)</div></div></div>';
+    } else if (item === "試作古華") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克</div></div>'
+            + '<div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "白影劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="荒瀧一斗" src="AvatarIcon/UI_AvatarIcon_Itto.png" '
+            + 'alt="荒瀧一斗" style="background-color:#af6f2a;"><div class="charName">荒瀧一斗</div></div>'
+            + '<div class="char"><img title="諾艾爾" src="AvatarIcon/UI_AvatarIcon_Noel.png" '
+            + 'alt="諾艾爾" style="background-color:#745a95;"><div class="charName">諾艾爾</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div></div>';
+    } else if (item === "黑岩斬刀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "螭骨劍") {
+        popup.innerHTML += '大劍輸出角色均可拿，因其為爆率大劍';
+    } else if (item === "千岩古劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div></div>';
+    } else if (item === "雪葬的星銀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "銜珠海皇") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "桂木斬長正") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div></div>';
+    } else if (item === "瑪海菈的水色") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="卡維" src="AvatarIcon/UI_AvatarIcon_Kaveh.png" '
+            + 'alt="卡維" style="background-color:#745a95;"><div class="charName">卡維</div></div></div>';
+    } else if (item === "惡王丸") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="迪希雅" src="AvatarIcon/UI_AvatarIcon_Dehya.png" '
+            + 'alt="迪希雅" style="background-color:#af6f2a;"><div class="charName">迪希雅</div></div></div>';
+    } else if (item === "森林王器") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div>'
+            + '<div class="char"><img title="卡維" src="AvatarIcon/UI_AvatarIcon_Kaveh.png" '
+            + 'alt="卡維" style="background-color:#745a95;"><div class="charName">卡維</div></div></div>';
+    } else if (item === "飾鐵之花") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div>'
+            + '<div class="char"><img title="卡維" src="AvatarIcon/UI_AvatarIcon_Kaveh.png" '
+            + 'alt="卡維" style="background-color:#745a95;"><div class="charName">卡維</div></div></div>';
+    } else if (item === "聊聊棒") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div></div>';
+    } else if (item === "浪影闊劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克</div></div>'
+            + '<div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="重雲" src="AvatarIcon/UI_AvatarIcon_Chongyun.png" '
+            + 'alt="重雲" style="background-color:#745a95;"><div class="charName">重雲</div></div>'
+            + '<div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "便攜動力鋸") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="北斗" src="AvatarIcon/UI_AvatarIcon_Beidou.png" '
+            + 'alt="北斗" style="background-color:#745a95;"><div class="charName">北斗</div></div>'
+            + '<div class="char"><img title="多莉" src="AvatarIcon/UI_AvatarIcon_Dori.png" '
+            + 'alt="多莉" style="background-color:#745a95;"><div class="charName">多莉</div></div>'
+            + '<div class="char"><img title="卡維" src="AvatarIcon/UI_AvatarIcon_Kaveh.png" '
+            + 'alt="卡維" style="background-color:#745a95;"><div class="charName">卡維</div></div></div>';
+    } else if (item === "鐵影闊劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="荒瀧一斗" src="AvatarIcon/UI_AvatarIcon_Itto.png" '
+            + 'alt="荒瀧一斗" style="background-color:#af6f2a;"><div class="charName">荒瀧一斗</div></div></div>';
+    } else if (item === "沐浴龍血的劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="迪盧克" src="AvatarIcon/UI_AvatarIcon_Diluc.png" '
+            + 'alt="迪盧克" style="background-color:#af6f2a;"><div class="charName">迪盧克(烈綻放)</div></div></div>';
+    } else if (item === "白鐵大劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="荒瀧一斗" src="AvatarIcon/UI_AvatarIcon_Itto.png" '
+            + 'alt="荒瀧一斗" style="background-color:#af6f2a;"><div class="charName">荒瀧一斗</div></div>'
+            + '<div class="char"><img title="諾艾爾" src="AvatarIcon/UI_AvatarIcon_Noel.png" '
+            + 'alt="諾艾爾" style="background-color:#745a95;"><div class="charName">諾艾爾</div></div></div>';
+    } else if (item === "以理服人") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="早柚" src="AvatarIcon/UI_AvatarIcon_Sayu.png" '
+            + 'alt="早柚" style="background-color:#745a95;"><div class="charName">早柚</div></div></div>';
+    } else if (item === "飛天大御劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="優菈" src="AvatarIcon/UI_AvatarIcon_Eula.png" '
+            + 'alt="優菈" style="background-color:#af6f2a;"><div class="charName">優菈</div></div>'
+            + '<div class="char"><img title="雷澤" src="AvatarIcon/UI_AvatarIcon_Razor.png" '
+            + 'alt="雷澤" style="background-color:#745a95;"><div class="charName">雷澤</div></div>'
+            + '<div class="char"><img title="辛焱" src="AvatarIcon/UI_AvatarIcon_Xinyan.png" '
+            + 'alt="辛焱" style="background-color:#745a95;"><div class="charName">辛焱</div></div>'
+            + '<div class="char"><img title="菲米尼" src="AvatarIcon/UI_AvatarIcon_Freminet.png" '
+            + 'alt="菲米尼" style="background-color:#745a95;"><div class="charName">菲米尼</div></div></div>';
+    } else if (item === "護摩之杖") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="胡桃" src="AvatarIcon/UI_AvatarIcon_Hutao.png" '
+            + 'alt="胡桃" style="background-color:#af6f2a;"><div class="charName">胡桃<br>(專武)</div></div>'
+            + '<div class="char"><img title="魈" src="AvatarIcon/UI_AvatarIcon_Xiao.png" '
+            + 'alt="魈" style="background-color:#af6f2a;"><div class="charName">魈</div></div>'
+            + '<div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離</div></div>'
+            + '<div class="char"><img title="坎蒂絲" src="AvatarIcon/UI_AvatarIcon_Candace.png" '
+            + 'alt="坎蒂絲" style="background-color:#745a95;"><div class="charName">坎蒂絲</div></div>'
+            + '<div class="char"><img title="蘿莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" '
+            + 'alt="蘿莎莉亞" style="background-color:#745a95;"><div class="charName">蘿莎莉亞</div></div></div>';
+    } else if (item === "天空之脊") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="蘿莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" '
+            + 'alt="蘿莎莉亞" style="background-color:#745a95;"><div class="charName">蘿莎莉亞</div></div></div>';
+    } else if (item === "貫虹之槊") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離(站場)<br>(專武)</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="魈" src="AvatarIcon/UI_AvatarIcon_Xiao.png" '
+            + 'alt="魈" style="background-color:#af6f2a;"><div class="charName">魈(搭帝君)</div></div></div>';
+    } else if (item === "和璞鳶") {
+        popup.innerHTML += '(魈專武)槍系輸出角色均可拿，因其為爆率槍';
+    } else if (item === "息災") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴<br>(專武)</div></div>'
+            + '<div class="char"><img title="魈" src="AvatarIcon/UI_AvatarIcon_Xiao.png" '
+            + 'alt="魈" style="background-color:#af6f2a;"><div class="charName">魈</div></div></div>';
+    } else if (item === "薙草之稻光") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍<br>(專武)</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬</div></div>'
+            + '<div class="char"><img title="雲堇" src="AvatarIcon/UI_AvatarIcon_Yunjin.png" '
+            + 'alt="雲堇" style="background-color:#745a95;"><div class="charName">雲堇</div></div>'
+            + '<div class="char"><img title="坎蒂絲" src="AvatarIcon/UI_AvatarIcon_Candace.png" '
+            + 'alt="坎蒂絲" style="background-color:#745a95;"><div class="charName">坎蒂絲</div></div>'
+            + '<div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤</div></div>'
+            + '<div class="char"><img title="米卡" src="AvatarIcon/UI_AvatarIcon_Mika.png" '
+            + 'alt="米卡" style="background-color:#745a95;"><div class="charName">米卡</div></div></div>';
+    } else if (item === "赤沙之杖") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="賽諾" src="AvatarIcon/UI_AvatarIcon_Cyno.png" '
+            + 'alt="賽諾" style="background-color:#af6f2a;"><div class="charName">賽諾<br>(專武)</div></div>'
+            + '<div class="char"><img title="胡桃" src="AvatarIcon/UI_AvatarIcon_Hutao.png" '
+            + 'alt="胡桃" style="background-color:#af6f2a;"><div class="charName">胡桃</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="蘿莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" '
+            + 'alt="蘿莎莉亞" style="background-color:#745a95;"><div class="charName">蘿莎莉亞</div></div></div>';
+    } else if (item === "匣裡滅辰") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="胡桃" src="AvatarIcon/UI_AvatarIcon_Hutao.png" '
+            + 'alt="胡桃" style="background-color:#af6f2a;"><div class="charName">胡桃</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍<br>(超綻放)</div></div>'
+            + '<div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬(烈綻放)</div></div>'
+            + '<div class="char"><img title="坎蒂絲" src="AvatarIcon/UI_AvatarIcon_Candace.png" '
+            + 'alt="坎蒂絲" style="background-color:#745a95;"><div class="charName">坎蒂絲</div></div></div>';
+    } else if (item === "試作星鐮") {
+        popup.innerHTML += '無';
+    } else if (item === "流月針") {
+        popup.innerHTML += '物C槍系角色可用';
+    } else if (item === "黑岩刺槍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="魈" src="AvatarIcon/UI_AvatarIcon_Xiao.png" '
+            + 'alt="魈" style="background-color:#af6f2a;"><div class="charName">魈</div></div>'
+            + '<div class="char"><img title="胡桃" src="AvatarIcon/UI_AvatarIcon_Hutao.png" '
+            + 'alt="胡桃" style="background-color:#af6f2a;"><div class="charName">胡桃</div></div></div>';
+    } else if (item === "決鬥之槍") {
+        popup.innerHTML += '槍系輸出角色均可拿，因其為爆率槍';
+    } else if (item === "千岩長槍") {
+        popup.innerHTML += '璃月槍系輸出角色均可拿';
+    } else if (item === "西風長槍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍</div></div>'
+            + '<div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬</div></div>'
+            + '<div class="char"><img title="雲堇" src="AvatarIcon/UI_AvatarIcon_Yunjin.png" '
+            + 'alt="雲堇" style="background-color:#745a95;"><div class="charName">雲堇</div></div>'
+            + '<div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤</div></div>'
+            + '<div class="char"><img title="米卡" src="AvatarIcon/UI_AvatarIcon_Mika.png" '
+            + 'alt="米卡" style="background-color:#745a95;"><div class="charName">米卡</div></div></div>';
+    } else if (item === "宗室獵槍") {
+        popup.innerHTML += '無，不建議兌換';
+    } else if (item === "龍脊長槍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="蘿莎莉亞" src="AvatarIcon/UI_AvatarIcon_Rosaria.png" '
+            + 'alt="蘿莎莉亞" style="background-color:#745a95;"><div class="charName">蘿莎莉亞(物C)</div></div></div>';
+    } else if (item === "喜多院十文字") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬(烈綻放)</div></div>'
+            + '<div class="char"><img title="雲堇" src="AvatarIcon/UI_AvatarIcon_Yunjin.png" '
+            + 'alt="雲堇" style="background-color:#745a95;"><div class="charName">雲堇</div></div>'
+    } else if (item === "漁獲") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離</div></div></div>';
+    } else if (item === "斷浪長鰭") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="雷電將軍" src="AvatarIcon/UI_AvatarIcon_Shougun.png" '
+            + 'alt="雷電將軍" style="background-color:#af6f2a;"><div class="charName">雷電將軍</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離</div></div></div>';
+    } else if (item === "貫月矢") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤(激化或激綻)</div></div></div>';
+    } else if (item === "風信之鋒") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="賽諾" src="AvatarIcon/UI_AvatarIcon_Cyno.png" '
+            + 'alt="賽諾" style="background-color:#af6f2a;"><div class="charName">賽諾</div></div>'
+            + '<div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div>'
+            + '<div class="char"><img title="香菱" src="AvatarIcon/UI_AvatarIcon_Xiangling.png" '
+            + 'alt="香菱" style="background-color:#745a95;"><div class="charName">香菱</div></div></div>';
+    } else if (item === "峽灣長歌") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬</div></div>'
+            + '<div class="char"><img title="雲堇" src="AvatarIcon/UI_AvatarIcon_Yunjin.png" '
+            + 'alt="雲堇" style="background-color:#745a95;"><div class="charName">雲堇</div></div>'
+            + '<div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤</div></div>'
+            + '<div class="char"><img title="米卡" src="AvatarIcon/UI_AvatarIcon_Mika.png" '
+            + 'alt="米卡" style="background-color:#745a95;"><div class="charName">米卡</div></div></div>';
+    } else if (item === "公義的酬報") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬</div></div>'
+            + '<div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤</div></div>'
+            + '<div class="char"><img title="米卡" src="AvatarIcon/UI_AvatarIcon_Mika.png" '
+            + 'alt="米卡" style="background-color:#745a95;"><div class="charName">米卡</div></div></div>';
+    } else if (item === "勘探鑽機") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="申鶴" src="AvatarIcon/UI_AvatarIcon_Shenhe.png" '
+            + 'alt="申鶴" style="background-color:#af6f2a;"><div class="charName">申鶴</div></div></div>';
+    } else if (item === "白纓槍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="賽諾" src="AvatarIcon/UI_AvatarIcon_Cyno.png" '
+            + 'alt="賽諾" style="background-color:#af6f2a;"><div class="charName">賽諾</div></div></div>';
+    } else if (item === "鉞矛") {
+        popup.innerHTML += '無，白值太低';
+    } else if (item === "黑纓槍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="鍾離" src="AvatarIcon/UI_AvatarIcon_Zhongli.png" '
+            + 'alt="鍾離" style="background-color:#af6f2a;"><div class="charName">鍾離</div></div>'
+            + '<div class="char"><img title="托馬" src="AvatarIcon/UI_AvatarIcon_Tohma.png" '
+            + 'alt="托馬" style="background-color:#745a95;"><div class="charName">托馬</div></div>'
+            + '<div class="char"><img title="坎蒂絲" src="AvatarIcon/UI_AvatarIcon_Candace.png" '
+            + 'alt="坎蒂絲" style="background-color:#745a95;"><div class="charName">坎蒂絲</div></div>'
+            + '<div class="char"><img title="瑤瑤" src="AvatarIcon/UI_AvatarIcon_Yaoyao.png" '
+            + 'alt="瑤瑤" style="background-color:#745a95;"><div class="charName">瑤瑤</div></div>'
+            + '<div class="char"><img title="米卡" src="AvatarIcon/UI_AvatarIcon_Mika.png" '
+            + 'alt="米卡" style="background-color:#745a95;"><div class="charName">米卡</div></div></div>';
+    } else if (item === "風鷹劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div>'
+            + '<div class="char"><img title="刻晴" src="AvatarIcon/UI_AvatarIcon_Keqing.png" '
+            + 'alt="刻晴" style="background-color:#af6f2a;"><div class="charName">刻晴(物C)</div></div>'
+            + '<div class="char"><img title="旅行者(男)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" '
+            + 'alt="旅行者(男)" style="background-color:#af6f2a;"><div class="charName">男旅行者(物C)</div></div>'
+            + '<div class="char"><img title="旅行者(女)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" '
+            + 'alt="旅行者(女)" style="background-color:#af6f2a;"><div class="charName">女旅行者(物C)</div></div></div>';
+    } else if (item === "天空之刃") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特</div></div>'
+            + '<div class="char"><img title="旅行者(男)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" '
+            + 'alt="旅行者(男)" style="background-color:#af6f2a;"><div class="charName">男旅行者</div></div>'
+            + '<div class="char"><img title="旅行者(女)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" '
+            + 'alt="旅行者(女)" style="background-color:#af6f2a;"><div class="charName">女旅行者</div></div></div>';
+    } else if (item === "蒼古自由之誓") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉<br>(專武)</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div>'
+            + '<div class="char"><img title="琳妮特" src="AvatarIcon/UI_AvatarIcon_Linette.png" '
+            + 'alt="琳妮特" style="background-color:#745a95;"><div class="charName">琳妮特</div></div>'
+            + '<div class="char"><img title="旅行者(男)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" '
+            + 'alt="旅行者(男)" style="background-color:#af6f2a;"><div class="charName">旅行者(男)</div></div>'
+            + '<div class="char"><img title="旅行者(女)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" '
+            + 'alt="旅行者(女)" style="background-color:#af6f2a;"><div class="charName">旅行者(女)</div></div></div>';
+    } else if (item === "斫峰之刃") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div>'
+            + '<div class="char"><img title="刻晴" src="AvatarIcon/UI_AvatarIcon_Keqing.png" '
+            + 'alt="刻晴" style="background-color:#af6f2a;"><div class="charName">刻晴</div></div>'
+            + '<div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div>'
+            + '<div class="char"><img title="神里綾人" src="AvatarIcon/UI_AvatarIcon_Ayato.png" '
+            + 'alt="神里綾人" style="background-color:#af6f2a;"><div class="charName">神里綾人</div></div>'
+            + '<div class="char"><img title="凱亞" src="AvatarIcon/UI_AvatarIcon_Kaeya.png" '
+            + 'alt="凱亞" style="background-color:#745a95;"><div class="charName">凱亞</div></div></div>';
+    } else if (item === "磐岩結綠") {
+        popup.innerHTML += '單手劍角色均可拿，因其為爆率劍';
+    } else if (item === "霧切之回光") {
+        popup.innerHTML += '(神里綾華專武)單手劍C均可拿，因其為爆傷劍';
+    } else if (item === "波亂月白經津") {
+        popup.innerHTML += '(神里綾人專武)單手劍C均可拿，因其為爆率劍';
+    } else if (item === "聖顯之鑰") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="妮露" src="AvatarIcon/UI_AvatarIcon_Nilou.png" '
+            + 'alt="妮露" style="background-color:#af6f2a;"><div class="charName">妮露<br>(專武)</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div>'
+            + '<div class="char"><img title="芙寧娜" src="AvatarIcon/UI_AvatarIcon_Furina.png" '
+            + 'alt="芙寧娜" style="background-color:#af6f2a;"><div class="charName">芙寧娜</div></div>'
+            + '<div class="char"><img title="萊依拉" src="AvatarIcon/UI_AvatarIcon_Layla.png" '
+            + 'alt="萊依拉" style="background-color:#745a95;"><div class="charName">萊依拉</div></div>'
+            + '<div class="char"><img title="綺良良" src="AvatarIcon/UI_AvatarIcon_Momoka.png" '
+            + 'alt="綺良良" style="background-color:#745a95;"><div class="charName">綺良良</div></div></div>';
+    } else if (item === "裁葉萃光") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="艾爾海森" src="AvatarIcon/UI_AvatarIcon_Alhatham.png" '
+            + 'alt="艾爾海森" style="background-color:#af6f2a;"><div class="charName">艾爾海森<br>(專武)</div></div>'
+            + '<div class="char"><img title="神里綾人" src="AvatarIcon/UI_AvatarIcon_Ayato.png" '
+            + 'alt="神里綾人" style="background-color:#af6f2a;"><div class="charName">神里綾人</div></div>'
+            + '<div class="char"><img title="阿貝多" src="AvatarIcon/UI_AvatarIcon_Albedo.png" '
+            + 'alt="阿貝多" style="background-color:#af6f2a;"><div class="charName">阿貝多</div></div>'
+            + '<div class="char"><img title="刻晴" src="AvatarIcon/UI_AvatarIcon_Keqing.png" '
+            + 'alt="刻晴" style="background-color:#af6f2a;"><div class="charName">刻晴</div></div></div>';
+    } else if (item === "靜水流湧之輝") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="芙寧娜" src="AvatarIcon/UI_AvatarIcon_Furina.png" '
+            + 'alt="芙寧娜" style="background-color:#af6f2a;"><div class="charName">芙寧娜<br>(專武)</div></div></div>';
+    } else if (item === "西風劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="凱亞" src="AvatarIcon/UI_AvatarIcon_Kaeya.png" '
+            + 'alt="凱亞" style="background-color:#745a95;"><div class="charName">凱亞</div></div>'
+            + '<div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉<br>(缺充能)</div></div>'
+            + '<div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特(缺充能<br>、沒高白值)</div></div>'
+            + '<div class="char"><img title="行秋" src="AvatarIcon/UI_AvatarIcon_Xingqiu.png" '
+            + 'alt="行秋" style="background-color:#745a95;"><div class="charName">行秋(沒祭禮)</div></div>'
+            + '<div class="char"><img title="琳妮特" src="AvatarIcon/UI_AvatarIcon_Linette.png" '
+            + 'alt="琳妮特" style="background-color:#745a95;"><div class="charName">琳妮特</div></div>'
+            + '<div class="char"><img title="芙寧娜" src="AvatarIcon/UI_AvatarIcon_Furina.png" '
+            + 'alt="芙寧娜" style="background-color:#af6f2a;"><div class="charName">芙寧娜</div></div>'
+            + '<div class="char"><img title="旅行者(男)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" '
+            + 'alt="旅行者(男)" style="background-color:#af6f2a;"><div class="charName">男旅行者</div></div>'
+            + '<div class="char"><img title="旅行者(女)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" '
+            + 'alt="旅行者(女)" style="background-color:#af6f2a;"><div class="charName">女旅行者</div></div></div>';
+    } else if (item === "笛劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div></div>';
+    } else if (item === "祭禮劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="行秋" src="AvatarIcon/UI_AvatarIcon_Xingqiu.png" '
+            + 'alt="行秋" style="background-color:#745a95;"><div class="charName">行秋</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div>'
+            + '<div class="char"><img title="綺良良" src="AvatarIcon/UI_AvatarIcon_Momoka.png" '
+            + 'alt="綺良良" style="background-color:#745a95;"><div class="charName">綺良良</div></div>'
+            + '<div class="char"><img title="琳妮特" src="AvatarIcon/UI_AvatarIcon_Linette.png" '
+            + 'alt="琳妮特" style="background-color:#745a95;"><div class="charName">琳妮特</div></div></div>';
+    } else if (item === "宗室長劍") {
+        popup.innerHTML += '無，不建議兌換';
+    } else if (item === "匣裡龍吟") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="刻晴" src="AvatarIcon/UI_AvatarIcon_Keqing.png" '
+            + 'alt="刻晴" style="background-color:#af6f2a;"><div class="charName">刻晴</div></div></div>';
+    } else if (item === "試作斬岩") {
+        popup.innerHTML += '無';
+    } else if (item === "鐵蜂刺") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div>'
+            + '<div class="weapons-container"><div class="char"><img title="艾爾海森" src="AvatarIcon/UI_AvatarIcon_Alhatham.png" '
+            + 'alt="艾爾海森" style="background-color:#af6f2a;"><div class="charName">艾爾海森<br>(高精)</div></div></div>';
+    } else if (item === "黑岩長劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="刻晴" src="AvatarIcon/UI_AvatarIcon_Keqing.png" '
+            + 'alt="刻晴" style="background-color:#af6f2a;"><div class="charName">刻晴</div></div>'
+            + '<div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div></div>';
+    } else if (item === "黑劍") {
+        popup.innerHTML += '單手劍角色均可拿，因其為爆率劍';
+    } else if (item === "暗巷閃光") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特(高白值)</div></div></div>';
+    } else if (item === "降臨之劍") {
+        popup.innerHTML += '無';
+    } else if (item === "腐殖之劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="芙寧娜" src="AvatarIcon/UI_AvatarIcon_Furina.png" '
+            + 'alt="芙寧娜" style="background-color:#af6f2a;"><div class="charName">芙寧娜</div></div>'
+            + '<div class="char"><img title="阿貝多" src="AvatarIcon/UI_AvatarIcon_Albedo.png" '
+            + 'alt="阿貝多" style="background-color:#af6f2a;"><div class="charName">阿貝多</div></div>'
+            + '<div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特</div></div></div>';
+    } else if (item === "天目影打刀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div>'
+            + '<div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="行秋" src="AvatarIcon/UI_AvatarIcon_Xingqiu.png" '
+            + 'alt="行秋" style="background-color:#745a95;"><div class="charName">行秋</div></div></div>';
+    } else if (item === "辰砂之紡錘") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="阿貝多" src="AvatarIcon/UI_AvatarIcon_Albedo.png" '
+            + 'alt="阿貝多" style="background-color:#af6f2a;"><div class="charName">阿貝多<br>(絕版專武)</div></div></div>';
+    } else if (item === "籠釣瓶一心") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉(C)</div></div>'
+            + '<div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div>'
+            + '<div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div></div>';
+    } else if (item === "原木刀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特</div></div>'
+            + '<div class="char"><img title="妮露" src="AvatarIcon/UI_AvatarIcon_Nilou.png" '
+            + 'alt="妮露" style="background-color:#af6f2a;"><div class="charName">妮露</div></div>'
+            + '<div class="char"><img title="綺良良" src="AvatarIcon/UI_AvatarIcon_Momoka.png" '
+            + 'alt="綺良良" style="background-color:#745a95;"><div class="charName">綺良良</div></div>'
+            + '<div class="char"><img title="旅行者(男)" src="AvatarIcon/UI_AvatarIcon_PlayerBoy.png" '
+            + 'alt="旅行者(男)" style="background-color:#af6f2a;"><div class="charName">男旅行者(草)</div></div>'
+            + '<div class="char"><img title="旅行者(女)" src="AvatarIcon/UI_AvatarIcon_PlayerGirl.png" '
+            + 'alt="旅行者(女)" style="background-color:#af6f2a;"><div class="charName">女旅行者(草)</div></div></div>';
+    } else if (item === "西福斯的月光") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div></div>';
+    } else if (item === "東花坊時雨") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div>'
+            + '<div class="char"><img title="艾爾海森" src="AvatarIcon/UI_AvatarIcon_Alhatham.png" '
+            + 'alt="艾爾海森" style="background-color:#af6f2a;"><div class="charName">艾爾海森</div></div></div>';
+    } else if (item === "狼牙") {
+        popup.innerHTML += '單手劍角色均可拿，因其為爆率劍';
+    } else if (item === "海淵終曲") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div>'
+            + '<div class="char"><img title="神里綾人" src="AvatarIcon/UI_AvatarIcon_Ayato.png" '
+            + 'alt="神里綾人" style="background-color:#af6f2a;"><div class="charName">神里綾人</div></div></div>';
+    } else if (item === "灰河渡手") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="凱亞" src="AvatarIcon/UI_AvatarIcon_Kaeya.png" '
+            + 'alt="凱亞" style="background-color:#745a95;"><div class="charName">凱亞</div></div>'
+            + '<div class="char"><img title="班尼特" src="AvatarIcon/UI_AvatarIcon_Bennett.png" '
+            + 'alt="班尼特" style="background-color:#745a95;"><div class="charName">班尼特</div></div>'
+            + '<div class="char"><img title="琳妮特" src="AvatarIcon/UI_AvatarIcon_Linette.png" '
+            + 'alt="琳妮特" style="background-color:#745a95;"><div class="charName">琳妮特</div></div>'
+            + '<div class="char"><img title="芙寧娜" src="AvatarIcon/UI_AvatarIcon_Furina.png" '
+            + 'alt="芙寧娜" style="background-color:#af6f2a;"><div class="charName">芙寧娜</div></div></div>';
+    } else if (item === "船塢長劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="妮露" src="AvatarIcon/UI_AvatarIcon_Nilou.png" '
+            + 'alt="妮露" style="background-color:#af6f2a;"><div class="charName">妮露</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div>'
+            + '<div class="char"><img title="萊依拉" src="AvatarIcon/UI_AvatarIcon_Layla.png" '
+            + 'alt="萊依拉" style="background-color:#745a95;"><div class="charName">萊依拉</div></div>'
+            + '<div class="char"><img title="綺良良" src="AvatarIcon/UI_AvatarIcon_Momoka.png" '
+            + 'alt="綺良良" style="background-color:#745a95;"><div class="charName">綺良良</div></div></div>';
+    } else if (item === "水仙十字聖劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div></div>';
+    } else if (item === "冷刃") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華</div></div>'
+            + '<div class="char"><img title="神里綾人" src="AvatarIcon/UI_AvatarIcon_Ayato.png" '
+            + 'alt="神里綾人" style="background-color:#af6f2a;"><div class="charName">神里綾人</div></div>'
+            + '<div class="char"><img title="凱亞" src="AvatarIcon/UI_AvatarIcon_Kaeya.png" '
+            + 'alt="凱亞" style="background-color:#745a95;"><div class="charName">凱亞</div></div>'
+            + '<div class="char"><img title="行秋" src="AvatarIcon/UI_AvatarIcon_Xingqiu.png" '
+            + 'alt="行秋" style="background-color:#745a95;"><div class="charName">行秋</div></div>'
+            + '<div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div></div>';
+    } else if (item === "黎明神劍") {
+        popup.innerHTML += '單手劍角色均可拿，因其為爆傷劍';
+    } else if (item === "旅行劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="妮露" src="AvatarIcon/UI_AvatarIcon_Nilou.png" '
+            + 'alt="妮露" style="background-color:#af6f2a;"><div class="charName">妮露</div></div>'
+            + '<div class="char"><img title="阿貝多" src="AvatarIcon/UI_AvatarIcon_Albedo.png" '
+            + 'alt="阿貝多" style="background-color:#af6f2a;"><div class="charName">阿貝多</div></div></div>';
+    } else if (item === "暗鐵劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="楓原萬葉" src="AvatarIcon/UI_AvatarIcon_Kazuha.png" '
+            + 'alt="楓原萬葉" style="background-color:#af6f2a;"><div class="charName">楓原萬葉</div></div>'
+            + '<div class="char"><img title="久岐忍" src="AvatarIcon/UI_AvatarIcon_Shinobu.png" '
+            + 'alt="久岐忍" style="background-color:#745a95;"><div class="charName">久岐忍</div></div></div>';
+    } else if (item === "吃虎魚刀") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="琴" src="AvatarIcon/UI_AvatarIcon_Qin.png" '
+            + 'alt="琴" style="background-color:#af6f2a;"><div class="charName">琴</div></div>'
+            + '<div class="char"><img title="七七" src="AvatarIcon/UI_AvatarIcon_Qiqi.png" '
+            + 'alt="七七" style="background-color:#af6f2a;"><div class="charName">七七</div></div></div>';
+    } else if (item === "飛天御劍") {
+        popup.innerHTML += '<div class="weapons-container"><div class="char"><img title="神里綾華" src="AvatarIcon/UI_AvatarIcon_Ayaka.png" '
+            + 'alt="神里綾華" style="background-color:#af6f2a;"><div class="charName">神里綾華(過渡)</div></div>'
+            + '<div class="char"><img title="凱亞" src="AvatarIcon/UI_AvatarIcon_Kaeya.png" '
+            + 'alt="凱亞" style="background-color:#745a95;"><div class="charName">凱亞(過渡)</div></div>'
+            + '<div class="char"><img title="行秋" src="AvatarIcon/UI_AvatarIcon_Xingqiu.png" '
+            + 'alt="行秋" style="background-color:#745a95;"><div class="charName">行秋(過渡)</div></div></div>';
     }
 
     popup.setAttribute("style", "display: block;");
 }
 
-function closePop()
-{
+function closePop() {
     document.getElementById('pop').setAttribute("style", "display: none;");
 }
 
-function update(start, end, output, item)
-{
+function update(start, end, output, item) {
     let add = [];
     let x = document.getElementById(item);
     if (x.classList.contains("five")) {
@@ -1288,7 +2378,7 @@ function sumValuesBetween(obj, start, end) {
                 sum = array.slice(5, 7).reduce((acc, val) => acc + val, 0);
             } else if (start === 80 && end === 90) {
                 sum = array[6];
-            }else {
+            } else {
                 for (let i = start - 1; i < end; i++) {
                     sum += array[i];
                 }
