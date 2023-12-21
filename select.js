@@ -249,7 +249,7 @@ const three = {
 async function display(item) {
     let output = "";
     output = '<div class="display-container">'
-        + '<img src="EquipIcon/UI_EquipIcon_' + EngName[item] + '.png" width="100px">'
+        + '<img src="EquipIcon/UI_EquipIcon_' + EngName[item] + '.png" width="25%">'
         + '<div class="text-container">'
         + '<div id="chName" style="font-size:20px">' + item + '</div>'
         + '<div>選擇等級</div><div>'
@@ -271,7 +271,7 @@ async function display(item) {
         + '<option value="70">70</option>'
         + '<option value="80">80</option>'
         + '<option value="90" selected>90</option></select></div>'
-        + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+        + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: xx-small; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
         + '&nbsp;推薦角色&nbsp;</button><div id="pop"></div></div>'
         + '<hr><div>計算結果</div>'
         + '<div class="material" id="material">';
