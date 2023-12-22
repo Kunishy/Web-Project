@@ -82,5 +82,371 @@
         "element": "雷",
         "weapon": "pole",
         "img": "AvatarIcon/UI_AvatarIcon_Cyno.png"
+    },
+    {
+        "name": "迪希雅",
+        "element": "火",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Dehya.png"
+    },
+    {
+        "name": "迪盧克",
+        "element": "火",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Diluc.png"
+    },
+    {
+        "name": "迪奧娜",
+        "element": "冰",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Diona.png"
+    },
+    {
+        "name": "多莉",
+        "element": "雷",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Dori.png"
+    },
+    {
+        "name": "優菈",
+        "element": "冰",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Eula.png"
+    },
+    {
+        "name": "琺露珊",
+        "element": "風",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Faruzan.png"
+    },
+    {
+        "name": "煙緋",
+        "element": "火",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Feiyan.png"
+    },
+    {
+        "name": "菲謝爾",
+        "element": "雷",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Fischl.png"
+    },
+    {
+        "name": "菲米尼",
+        "element": "冰",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Freminet.png"
+    },
+    {
+        "name": "芙寧娜",
+        "element": "水",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Furina.png"
+    },
+    {
+        "name": "甘雨",
+        "element": "冰",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Ganyu.png"
+    },
+    {
+        "name": "五郎",
+        "element": "岩",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Gorou.png"
+    },
+    {
+        "name": "鹿野院平藏",
+        "element": "風",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Heizo.png"
+    },
+    {
+        "name": "胡桃",
+        "element": "火",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Hutao.png"
+    },
+    {
+        "name": "荒瀧一斗",
+        "element": "岩",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Itto.png"
+    },
+    {
+        "name": "凱亞",
+        "element": "冰",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Kaeya.png"
+    },
+    {
+        "name": "卡維",
+        "element": "草",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Kaveh.png"
+    },
+    {
+        "name": "楓原萬葉",
+        "element": "風",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Kazuha.png"
+    },
+    {
+        "name": "刻晴",
+        "element": "雷",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Keqing.png"
+    },
+    {
+        "name": "可莉",
+        "element": "火",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Klee.png"
+    },
+    {
+        "name": "珊瑚宮心海",
+        "element": "水",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Kokomi.png"
+    },
+    {
+        "name": "萊依拉",
+        "element": "冰",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Layla.png"
+    },
+    {
+        "name": "琳妮特",
+        "element": "風",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Linette.png"
+    },
+    {
+        "name": "林尼",
+        "element": "火",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Liney.png"
+    },
+    {
+        "name": "麗莎",
+        "element": "雷",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Lisa.png"
+    },
+    {
+        "name": "米卡",
+        "element": "冰",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Mika.png"
+    },
+    {
+        "name": "綺良良",
+        "element": "草",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Momoka.png"
+    },
+    {
+        "name": "莫娜",
+        "element": "水",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Mona.png"
+    },
+    {
+        "name": "納西妲",
+        "element": "草",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Nahida.png"
+    },
+    {
+        "name": "那維萊特",
+        "element": "水",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Neuvillette.png"
+    },
+    {
+        "name": "妮露",
+        "element": "水",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Nilou.png"
+    },
+    {
+        "name": "凝光",
+        "element": "岩",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Ningguang.png"
+    },
+    {
+        "name": "諾艾爾",
+        "element": "岩",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Noel.png"
+    },
+    {
+        "name": "男旅行者",
+        "element": "",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_PlayerBoy.png"
+    },
+    {
+        "name": "女旅行者",
+        "element": "",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_PlayerGirl.png"
+    },
+    {
+        "name": "琴",
+        "element": "風",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Qin.png"
+    },
+    {
+        "name": "七七",
+        "element": "冰",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Qiqi.png"
+    },
+    {
+        "name": "雷澤",
+        "element": "雷",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Razor.png"
+    },
+    {
+        "name": "羅莎莉亞",
+        "element": "冰",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Rosaria.png"
+    },
+    {
+        "name": "九條裟羅",
+        "element": "雷",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Sara.png"
+    },
+    {
+        "name": "早柚",
+        "element": "風",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Sayu.png"
+    },
+    {
+        "name": "申鶴",
+        "element": "冰",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Shenhe.png"
+    },
+    {
+        "name": "久岐忍",
+        "element": "雷",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Shinobu.png"
+    },
+    {
+        "name": "雷電將軍",
+        "element": "雷",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Shougun.png"
+    },
+    {
+        "name": "砂糖",
+        "element": "風",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Sucrose.png"
+    },
+    {
+        "name": "達達利亞",
+        "element": "水",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Tartaglia.png"
+    },
+    {
+        "name": "提納里",
+        "element": "草",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Tighnari.png"
+    },
+    {
+        "name": "托馬",
+        "element": "火",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Tohma.png"
+    },
+    {
+        "name": "溫迪",
+        "element": "風",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Venti.png"
+    },
+    {
+        "name": "流浪者",
+        "element": "風",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Wanderer.png"
+    },
+    {
+        "name": "萊歐斯利",
+        "element": "冰",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Wriothesley.png"
+    },
+    {
+        "name": "香菱",
+        "element": "火",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Xiangling.png"
+    },
+    {
+        "name": "魈",
+        "element": "風",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Xiao.png"
+    },
+    {
+        "name": "行秋",
+        "element": "水",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Xingqiu.png"
+    },
+    {
+        "name": "辛焱",
+        "element": "火",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Xinyan.png"
+    },
+    {
+        "name": "八重神子",
+        "element": "雷",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Yae.png"
+    },
+    {
+        "name": "瑤瑤",
+        "element": "草",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Yaoyao.png"
+    },
+    {
+        "name": "夜蘭",
+        "element": "水",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Yelan.png"
+    },
+    {
+        "name": "宵宮",
+        "element": "火",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Yoimiya.png"
+    },
+    {
+        "name": "雲堇",
+        "element": "岩",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Yunjin.png"
+    },
+    {
+        "name": "鍾離",
+        "element": "岩",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Zhongli.png"
     }
 ]
