@@ -1,0 +1,86 @@
+[
+    {
+        "name": "阿貝多",
+        "element": "岩",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Albedo.png"
+    },
+    {
+        "name": "艾爾海森",
+        "element": "草",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Alhatham.png"
+    },
+    {
+        "name": "安柏",
+        "element": "火",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Ambor.png"
+    },
+    {
+        "name": "神里綾華",
+        "element": "冰",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Ayaka.png"
+    },
+    {
+        "name": "神里綾人",
+        "element": "水",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Ayato.png"
+    },
+    {
+        "name": "白朮",
+        "element": "草",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Baizhuer.png"
+    },
+    {
+        "name": "芭芭拉",
+        "element": "水",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Barbara.png"
+    },
+    {
+        "name": "北斗",
+        "element": "雷",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Beidou.png"
+    },
+    {
+        "name": "班尼特",
+        "element": "火",
+        "weapon": "sword",
+        "img": "AvatarIcon/UI_AvatarIcon_Bennett.png"
+    },
+    {
+        "name": "坎蒂絲",
+        "element": "水",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Candace.png"
+    },
+    {
+        "name": "夏洛蒂",
+        "element": "冰",
+        "weapon": "catalyst",
+        "img": "AvatarIcon/UI_AvatarIcon_Charlotte.png"
+    },
+    {
+        "name": "重雲",
+        "element": "冰",
+        "weapon": "claymore",
+        "img": "AvatarIcon/UI_AvatarIcon_Chongyun.png"
+    },
+    {
+        "name": "柯萊",
+        "element": "草",
+        "weapon": "bow",
+        "img": "AvatarIcon/UI_AvatarIcon_Collei.png"
+    },
+    {
+        "name": "賽諾",
+        "element": "雷",
+        "weapon": "pole",
+        "img": "AvatarIcon/UI_AvatarIcon_Cyno.png"
+    }
+]
