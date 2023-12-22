@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>武器</title>
+    <style type="text/CSS">
+        body {
+            background-color: #352F44;
+            color: #FAF0E6;
+            font-family: sans-serif;
+        }
+        .flex-container{
+            display: flex;
+            align-items: stretch;
+        }
+        .flex-container > div{
+            text-align: center;
+            margin: 5%;
+        }
+        div{
+            margin: 10px;
+        }
+        .select-container{
+            display: flex;
+            flex-wrap: row wrap;
+            
+        }
+        .option{
+            background-color: #5C5470;
+            border: 2px solid #FAF0E6;
+            border-radius: 5px;
+            width: 40%;
+        }
+        .selected-option {
+            background-color: #FAF0E6;
+            border: 2px solid #5C5470;
+            color: #5C5470;
+            border-radius: 5px;
+            width: 40%;
+        }
+        .items{
+            text-align: center;
+            width: 13%;
+            background-color: #FAF0E6;
+            border-radius: 5px;
+            margin: -5px;
+        }
+        .name{
+            color: black;
+            margin: -1px;
+            font-size: xx-small;
+        }
+        .weapons{
+            display: flex;
+            flex-flow:  row wrap;
+            width: 570px;
+        }
+        .weapons-container{
+            display: flex;
+            flex-flow: wrap;
+        }
+        .items{
+            margin: 5px;
+        }
+        img{
+            border-radius: 5px;
+            max-width: 100%;
+        }
+        .five{
+            background-color: #af6f2a;
+        }
+        .four{
+            background-color: #745a95;
+        }
+        .three{
+            background-color: #53799e;
+        }
+        
+        .display-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .display-container img {
+            height: 100px;
+            margin: 10px;
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        .material{
+            display: flex;
+            flex-flow: wrap;
+        }
+        #pop{
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: #352F44;
+            border: 1px solid #5C5470;
+            z-index: 1;
+            width: 450px;
+        }
+        .btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+            background-color: #af6f2a;
+            color: #FAF0E6;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .char{
+            text-align: center;
+            background-color: #FAF0E6;
+            border-radius: 5px;
+        }
+        .char img{
+            max-width: 100%;
+        }
+        .charName{
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="width: 40%;">
+            <div id = "elementFilter" class="select-container">
+                <div class="option" id="oppyro" onclick="elementOption('火')" title="火" value = "pyro">火</div>
+                <div class="option" id="ophydro" onclick="elementOption('水')" title="水" value = "hydro">水</div>
+                <div class="option" id="opanemo" onclick="elementOption('風')" title="風" value = "anemo">風</div>
+                <div class="option" id="opelectro" onclick="elementOption('雷')" title="雷" value = "electro">雷</div>
+                <div class="option" id="opdendro" onclick="elementOption('草')" title="草" value = "dendro">草</div>
+                <div class="option" id="opcryo" onclick="elementOption('冰')" title="冰" value = "cryo">冰</div>
+                <div class="option" id="opgeo" onclick="elementOption('岩')" title="岩" value = "geo">岩</div>
+            </div>
+            <div id ="weaponFilter" class="select-container">
+                <div class="option" id="opbow" onclick="toggleOption('bow')" title="弓" value = "bow">弓</div>
+                <div class="option" id="opcatalyst" onclick="toggleOption('catalyst')" title="法器" value = "catalyst">法器</div>
+                <div class="option" id="opclaymore" onclick="toggleOption('claymore')" title="雙手劍" value = "claymore">雙手劍</div>
+                <div class="option" id="oppole" onclick="toggleOption('pole')" title="長柄武器" value = "pole">長柄武器</div>
+                <div class="option" id="opsword" onclick="toggleOption('sword')" title="單手劍" value = "sword">單手劍</div>
+            </div>
+            <div class="weapons">
+                <div id="bow" class="weapons-container">
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="display" style="border: 5px solid #5C5470; border-radius: 5px; width: 60%">
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script >
+        // 异步加载 JSON 文件
+        fetch('https://kunishy.github.io/Web-Project/characters.json')
+        .then(response => response.json())
+        .then(data => {
+            // 将角色数据存储在全局变量中
+            window.characters = data;
+            // 初始化页面
+
+        });
+
+
+    let optionStates = {
+        bow: false,
+        catalyst: false,
+        claymore: false,
+        pole: false,
+        sword: false,
+        
+    };
+    let elementStates = {
+        pyro: false,
+        hydro: false,
+        anemo: false,
+        electro: false,
+        dendro: false,
+        cryo: false,
+        geo: false
+    };
+    let element = {
+        火: 'pyro',
+        水: 'hydro',
+        風: 'anemo',
+        雷: 'electro',
+        草: 'dendro',
+        冰: 'cryo',
+        岩: 'geo'
+    };
+    let star = {
+        5:'five',
+        4:'four',
+        3:'three'
+    };
+
+    function toggleOption(option) {
+        
+        console.log('選擇了：',option);
+        optionStates[option] = !optionStates[option];
+        for (let x in optionStates) {
+            let item = document.getElementById('op' + x);
+            item.setAttribute("class", optionStates[x] ? "selected-option" : "option");
+        }
+        
+        updateDisplay();
+    }
+    function elementOption(option) {
+        
+        console.log('選擇了：',option);
+        elementStates[element[option]] = !elementStates[element[option]];
+        for (let x in elementStates) {
+            let item = document.getElementById('op' + x);
+            item.setAttribute("class", elementStates[x] ? "selected-option" : "option");
+        }
+        
+        updateDisplay();
+    }
+
+    function updateDisplay() {
+        
+        let weaponTypes = ["bow", "catalyst", "claymore", "pole", "sword"];
+        let elementTypes = ["火", "水", "風", "雷", "草" , "冰", "岩"];
+        let bow = document.getElementById("bow");
+        let content = "";
+        for (let item of characters) {
+            if((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon])){
+                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
+                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
+                        '<div class="name">'+item.name+'</div>'+
+                        '</div>';
+            }
+            else if((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]])){
+                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
+                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
+                        '<div class="name">'+item.name+'</div>'+
+                        '</div>';
+            }
+            else if(elementStates[element[item.element]] && optionStates[item.weapon] )
+            {
+                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
+                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
+                        '<div class="name">'+item.name+'</div>'+
+                        '</div>';
+            }
+        }
+        bow.innerHTML = content;
+    }
+    async function display(name) {
+    const item = characters.find(item => item.name === name);
+    let output = "";
+    output = '<div class="display-container">'
+        + '<img src="' + item.img+ '"class="'+star[item.star]+'" width="100px">'
+        + '<div class="text-container">'
+        + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
+        + '<div>選擇等級</div><div>'
+        + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
+        + 'onchange="updateLevelOptions(\'start\', \'' + item.name + '\')">'
+        + '<option value="1" selected>1</option>'
+        + '<option value="20">20</option>'
+        + '<option value="40">40</option>'
+        + '<option value="50">50</option>'
+        + '<option value="60">60</option>'
+        + '<option value="70">70</option>'
+        + '<option value="80">80</option></select><span>~</span>'
+        + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
+        + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
+        + '<option value="20">20</option>'
+        + '<option value="40">40</option>'
+        + '<option value="50">50</option>'
+        + '<option value="60">60</option>'
+        + '<option value="70">70</option>'
+        + '<option value="80">80</option>'
+        + '<option value="90" selected>90</option></select></div>'
+        + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+        + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
+        + '<hr><div>計算結果</div>'
+        + '<div class="material" id="material">';
+    //output = await update(1, 90, output, item);
+    document.getElementById("display").innerHTML = output;
+    }
+    const character = {
+        money: [20, 136, 156, 231, 319, 423, 805],
+        book: [5, 29, 29, 43, 60, 81, 172],
+        g1: [0, 3, 15, 0, 0, 0, 0],
+        g2: [0, 0, 0, 12, 18, 0, 0],
+        g3: [0, 0, 0, 0, 0, 12, 24],
+        m1: [0, 1, 0, 0, 0, 0, 0],
+        m2: [0, 0, 3, 6, 0, 0, 0],
+        m3: [0, 0, 0, 0, 3, 6, 0],
+        m4: [0, 5, 0, 0, 0, 0, 6],
+        sp: [0, 3, 10, 20, 30, 45, 60],
+        boss: [0, 0, 2, 4, 8 ,12, 20],
+    };
+
+    const talent= {
+        money: [12.5, 17.5, 25, 30, 37.5, 120, 260, 700],
+        g1: [0, 2, 8, 0, 0, 0, 0],
+        g2: [0, 0, 0, 6, 9, 0, 0],
+        g3: [0, 0, 0, 0, 0, 6, 12],
+        p1: [0, 3, 12, 0, 0, 0, 0],
+        p2: [0, 0, 0, 6, 12, 0, 0],
+        p3: [0, 0, 0, 0, 0, 9, 18],
+        w1: [0, 3, 0, 0, 0, 0, 0],
+        w2: [0, 0, 3, 6, 0, 0, 0],
+        w3: [0, 0, 0, 0, 3, 6, 0],
+        w4: [0, 0, 0, 0, 0, 0, 4],
+    };
+
+
+
+    </script>
+</body>
+
+</html>
