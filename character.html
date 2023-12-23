@@ -92,7 +92,8 @@
             flex-grow: 1;
         }
         .material{
-            display: flex;
+            position: relative;
+            display: flex ;
             flex-flow: wrap;
         }
         #pop{
@@ -213,6 +214,14 @@
             4: 'four',
             3: 'three'
         };
+        let talentvalue = {
+            Astar:1,
+            Aend:10,
+            Estar:1,
+            Eend:10,
+            Qstar:1,
+            Qend:10
+        }
 
         function toggleOption(option) {
 
@@ -291,9 +300,9 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option>'
                 + '<option value="90" selected>90</option></select></div></div>'
-                + '<div class="" style = "display:row"> <div>選擇天賦等級 </div>'
-                + 'A&nbsp;&nbsp;<select name="level-startA" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + '<div style = "display:row left;"> <div>選擇天賦等級 </div>'
+                + 'A&nbsp;&nbsp;<select name="level-startA" id="level-startA" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\',\'A\')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
@@ -303,8 +312,8 @@
                 + '<option value="7">7</option>'
                 + '<option value="8">8</option>'
                 + '<option value="9">9</option></select><span>~</span>'
-                + '<select name="level-endA" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<select name="level-endA" id="level-endA" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\',\'A\')">'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
                 + '<option value="4">4</option>'
@@ -314,8 +323,8 @@
                 + '<option value="8">8</option>'
                 + '<option value="9">9</option>'
                 + '<option value="10" selected>10</option></select><br>'
-                +'E&nbsp;&nbsp;<select name="level-starteE" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + 'E&nbsp;&nbsp;<select name="level-starteE" id="level-startE" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\',\'E\')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
@@ -325,8 +334,8 @@
                 + '<option value="7">7</option>'
                 + '<option value="8">8</option>'
                 + '<option value="9">9</option></select><span>~</span>'
-                + '<select name="level-endE" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<select name="level-endE" id="level-endE" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\',\'E\')">'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
                 + '<option value="4">4</option>'
@@ -336,8 +345,8 @@
                 + '<option value="8">8</option>'
                 + '<option value="9">9</option>'
                 + '<option value="10" selected>10</option></select><br>'
-                +'Q&nbsp;&nbsp;<select name="level-startQ" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + 'Q&nbsp;&nbsp;<select name="level-startQ" id="level-startQ" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\',\'Q\')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
@@ -347,8 +356,8 @@
                 + '<option value="7">7</option>'
                 + '<option value="8">8</option>'
                 + '<option value="9">9</option></select><span>~</span>'
-                + '<select name="level-endQ" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
-                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<select name="level-endQ" id="level-endQ" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\',\'Q\')">'
                 + '<option value="2">2</option>'
                 + '<option value="3">3</option>'
                 + '<option value="4">4</option>'
@@ -362,11 +371,11 @@
                 + '<button onclick="openPop(' + item + ')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;margin: 5px;">'
                 + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
                 + '<hr><div>升級素材</div>'
-                + '<div class="material" id="material" ></div>';
-                output = await update(1, 90, output, item);
-                output += '<hr style="width: 100%;"></hr ><div>天賦素材</div><div class="material" id="materialtalent">';
-            
+                + '<div class="material" id="material" style="">';
+            output = await update(1, 90, output, item);
+            output += '</div><hr ><div>天賦素材</div><div class="material" id="materialtalent">';
             output = await updatetalent(1, 10, output, item);
+            output += '</div>';
             document.getElementById("display").innerHTML = output;
         }
         async function updateLevelOptions(type, name) {
@@ -391,38 +400,64 @@
                     }
                 }
             }
+            document.getElementById("material").innerHTML = "";
             let materialContainer = "";
             materialContainer = update(startValue, endValue, materialContainer, item);
             document.getElementById("material").innerHTML = materialContainer;
         }
-        async function updateLevelOptionstalent(type, name) {
+        async function updateLevelOptionstalent(type, name, X) {
+            let startSelect;
+            let endSelect;
             let item = characters.find(item => item.name === name);
-            const startSelect = document.getElementById('level-start');
-            const endSelect = document.getElementById('level-end');
+            if (X === 'A'){
+                startSelect = document.getElementById('level-startA');
+                endSelect = document.getElementById('level-endA');
+            }
+            else if (X === 'E'){
+                startSelect = document.getElementById('level-startE');
+                endSelect = document.getElementById('level-endE');
+            }
+            else if (X === 'Q'){
+                startSelect = document.getElementById('level-startQ');
+                endSelect = document.getElementById('level-endQ');
+            }
+            console.log('選擇了：', startSelect.value);
             const startValue = parseInt(startSelect.value);
             const endValue = parseInt(endSelect.value);
 
             if (type === 'start') {
-                for (let i = 1; i <= 10; i += 1) {
+                for (let i = 2; i <= 10; i += 1) {
                     const option = endSelect.querySelector(`option[value="${i}"]`);
                     if (option) {
                         option.disabled = i <= startValue;
                     }
                 }
             } else if (type === 'end') {
-                for (let i = 1; i <= 10; i += 1) {
+                for (let i = 2; i <= 10; i += 1) {
                     const option = startSelect.querySelector(`option[value="${i}"]`);
                     if (option) {
                         option.disabled = i >= endValue;
                     }
                 }
             }
+            if (X === 'A'){
+                talentvalue.Astar = parseInt(startSelect.value);
+                talentvalue.Aend = parseInt(endSelect.value);
+            }
+            else if (X === 'E'){
+                talentvalue.Estar = parseInt(startSelect.value);
+                talentvalue.Eend = parseInt(endSelect.value);
+            }
+            else if (X === 'Q'){
+                talentvalue.Qstar = parseInt(startSelect.value);
+                talentvalue.Qend = parseInt(endSelect.value);
+            }
             let materialContainer = "";
             materialContainer = updatetalent(startValue, endValue, materialContainer, item);
+
             document.getElementById("materialtalent").innerHTML = materialContainer;
         }
-
-
+        
         function sumValuesBetween(obj, start, end) {
             const result = [];
             for (const key in obj) {
@@ -494,53 +529,154 @@
             }
             return result.length > 0 ? result : [{ arrayName: null, sum: 0 }];
         }
-        
-        let color = {
-            "金":"#af6f2a", 
-            "紫":"#745a95",
-            "藍":"#53799e", 
-            "綠":"#496C65", 
-            "灰":"#5F5F6C" 
-        };
-        function update(start, end, output, item) {
-            //let item = characters.find(item => item.name === name);
-            let add = [];
-            add = sumValuesBetween(character, start, end);
-            //talent = sumValuesBetween(talent, start, end);
-            //output = printElement(item, add, output);
-            output += printMaterial("其他/摩拉.png", add[0].sum + 'k',color["藍"]);
-            output += printMaterial("其他/紫經驗書.png", add[1].sum,color["紫"]);
-            console.log('選擇了：', add[2].sum);
-            if (add[2].sum > 0) {
-                output += printMaterial(item.gray, add[2].sum ,color["灰"]);
+        function sumValuesBetweentalent(obj, start, end) {
+            const result = [];
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    const array = obj[key];
+                    if (start === 1 && end === 2) {
+                        sum = array[0];
+                    } else if (start === 1 && end === 3) {
+                        sum = array.slice(0, 2).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 4) {
+                        sum = array.slice(0, 3).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 5) {
+                        sum = array.slice(0, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 6) {
+                        sum = array.slice(0, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 7) {
+                        sum = array.slice(0, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 8) {
+                        sum = array.slice(0, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 9) {
+                        sum = array.slice(0, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 10) {
+                        sum = array.slice(0, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 3) {
+                        sum = array[1];
+                    } else if (start === 2 && end === 4) {
+                        sum = array.slice(1, 3).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 5) {
+                        sum = array.slice(1, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 6) {
+                        sum = array.slice(1, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 7) {
+                        sum = array.slice(1, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 8) {
+                        sum = array.slice(1, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 9) {
+                        sum = array.slice(1, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 2 && end === 10) {
+                        sum = array.slice(1, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 4) {
+                        sum = array[2];
+                    } else if (start === 3 && end === 5) {
+                        sum = array.slice(2, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 6) {
+                        sum = array.slice(2, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 7) {
+                        sum = array.slice(2, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 8) {
+                        sum = array.slice(2, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 9) {
+                        sum = array.slice(2, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 3 && end === 10) {
+                        sum = array.slice(2, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 4 && end === 5) {
+                        sum = array[3];
+                    } else if (start === 4 && end === 6) {
+                        sum = array.slice(3, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 4 && end === 7) {
+                        sum = array.slice(3, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 4 && end === 8) {
+                        sum = array.slice(3, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 4 && end === 9) {
+                        sum = array.slice(3, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 4 && end === 10) {
+                        sum = array.slice(3, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 5 && end === 6) {
+                        sum = array[4];
+                    } else if (start === 5 && end === 7) {
+                        sum = array.slice(4, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 5 && end === 8) {
+                        sum = array.slice(4, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 5 && end === 9) {
+                        sum = array.slice(4, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 5 && end === 10) {
+                        sum = array.slice(4, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 6 && end === 7) {
+                        sum = array[5];
+                    } else if (start === 6 && end === 8) {
+                        sum = array.slice(5, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 6 && end === 9) {
+                        sum = array.slice(5, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 6 && end === 10) {
+                        sum = array.slice(5, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 7 && end === 8) {
+                        sum = array[6];
+                    } else if (start === 7 && end === 9) {
+                        sum = array.slice(6, 8).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 7 && end === 10) {
+                        sum = array.slice(6, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 8 && end === 9) {
+                        sum = array[7];
+                    } else if (start === 8 && end === 10) {
+                        sum = array.slice(7, 9).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 9 && end === 10) {
+                        sum = array[8];
+                    } else {
+                        for (let i = start - 1; i < end; i++) {
+                            sum += array[i];
+                        }
+                    }
+                    result.push({ arrayName: key, sum: sum });
+                }
             }
-            if (add[3].sum > 0) {
-                output += printMaterial(item.green, add[3].sum,color["綠"]);
-            }
-            if (add[4].sum > 0) {
-                output += printMaterial(item.blue, add[4].sum,color["藍"]);
-            }
-            if (add[5].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '1.png', add[5].sum,color["綠"]);
-            }
-            if (add[6].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '2.png', add[6].sum,color["藍"]);
-            }
-            if (add[7].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '3.png', add[7].sum,color["紫"]);
-            }
-            if (add[8].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '4.png', add[8].sum,color["金"]);
-            }
-            if (add[9].sum > 0) {
-                output += printMaterial(item.break, add[9].sum,color["灰"]);
-            }
-            if (add[10].sum > 0) {
-                output += printMaterial('首領素材/' +item.boss, add[10].sum,color["紫"]);
-            }
-            return output;
+            return result.length > 0 ? result : [{ arrayName: null, sum: 0 }];
         }
 
+        let color = {
+            "金": "#af6f2a",
+            "紫": "#745a95",
+            "藍": "#53799e",
+            "綠": "#496C65",
+            "灰": "#5F5F6C"
+        };
+        function update(start, end, output, item) {
+            let add = [];
+            add = sumValuesBetween(character, start, end);
+            output += printMaterial("其他/摩拉.png", add[0].sum + 'k', color["藍"]);
+            output += printMaterial("其他/紫經驗書.png", add[1].sum, color["紫"]);
+            if (add[2].sum > 0) {
+                output += printMaterial(item.gray, add[2].sum, color["灰"]);
+            }
+            if (add[3].sum > 0) {
+                output += printMaterial(item.green, add[3].sum, color["綠"]);
+            }
+            if (add[4].sum > 0) {
+                output += printMaterial(item.blue, add[4].sum, color["藍"]);
+            }
+            if (add[5].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '1.png', add[5].sum, color["綠"]);
+            }
+            if (add[6].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '2.png', add[6].sum, color["藍"]);
+            }
+            if (add[7].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '3.png', add[7].sum, color["紫"]);
+            }
+            if (add[8].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '4.png', add[8].sum, color["金"]);
+            }
+            if (add[9].sum > 0) {
+                output += printMaterial(item.break, add[9].sum, color["灰"]);
+            }
+            if (add[10].sum > 0) {
+                output += printMaterial('首領素材/' + item.boss, add[10].sum, color["紫"]);
+            }
+            
+            return output;
+        }
         const character = {
             money: [20, 136, 156, 231, 319, 423, 805],
             book: [5, 29, 29, 43, 60, 81, 172],
@@ -566,53 +702,52 @@
             w1: [0, 0, 0, 0, 0, 1, 1, 2, 2],
             k1: [0, 0, 0, 0, 0, 0, 0, 0, 1],
         };
-
         function printMaterial(imgUrl, value, color) {
             return '<div class="items"  >'
-                + '<img src="' + imgUrl + '" style=" background-color: '+color+'">'
+                + '<img src="' + imgUrl + '" style=" background-color: ' + color + '">'
                 + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
         }
         function updatetalent(start, end, output, item) {
-            //let item = characters.find(item => item.name === name);
-            let add = [];
-            //add = sumValuesBetween(character, start, end);
-            add = sumValuesBetween(talent, start, end);
-            //output = printElement(item, add, output);
             
-            output += printMaterial("其他/摩拉.png", add[0].sum + 'k',color["藍"]);
-            
-            console.log('選擇了：', add[2].sum);
-            if (add[1].sum > 0) {
-                output += printMaterial(item.gray, add[1].sum ,color["灰"]);
+            let addA = [];
+            let addE = [];
+            let addQ = [];
+            addA = sumValuesBetweentalent(talent, talentvalue.Astar, talentvalue.Aend);
+            addE = sumValuesBetweentalent(talent, talentvalue.Estar, talentvalue.Eend);
+            addQ = sumValuesBetweentalent(talent, talentvalue.Qstar, talentvalue.Qend);
+            let addsum = [];
+            for (let i=0;i<9;i++){
+                addsum[i] = addA[i].sum + addE[i].sum + addQ[i].sum;
             }
-            if (add[2].sum > 0) {
-                output += printMaterial(item.green, add[2].sum ,color["綠"]);
+            output += printMaterial("其他/摩拉.png", addsum[0] + 'k', color["藍"]);
+
+            console.log('選擇了：', addsum[2]);
+            if (addsum[1] > 0) {
+                output += printMaterial(item.gray, addsum[1], color["灰"]);
             }
-            if (add[3].sum > 0) {
-                output += printMaterial(item.blue, add[3].sum,color["藍"]);
+            if (addsum[2] > 0) {
+                output += printMaterial(item.green, addsum[2], color["綠"]);
             }
-            if (add[4].sum > 0) {
-                output += printMaterial('Talent/Teachings of '+ item.talent+ '.png', add[4].sum,color["綠"]);
+            if (addsum[3] > 0) {
+                output += printMaterial(item.blue, addsum[3], color["藍"]);
             }
-            if (add[5].sum > 0) {
-                output += printMaterial('Talent/Guide of ' + item.talent + '.png', add[5].sum,color["藍"]);
+            if (addsum[4] > 0) {
+                output += printMaterial('Talent/Teachings of ' + item.talent + '.png', addsum[4], color["綠"]);
             }
-            if (add[6].sum > 0) {
-                output += printMaterial('Talent/Philosophies of ' + item.talent + '.png', add[6].sum,color["紫"]);
+            if (addsum[5] > 0) {
+                output += printMaterial('Talent/Guide of ' + item.talent + '.png', addsum[5], color["藍"]);
             }
-            if (add[7].sum > 0) {
-                output += printMaterial( item.week , add[7].sum,color["金"]);
+            if (addsum[6] > 0) {
+                output += printMaterial('Talent/Philosophies of ' + item.talent + '.png', addsum[6], color["紫"]);
             }
-            if (add[8].sum > 0) {
-                output += printMaterial('其他/皇冠.png', add[8].sum,color["金"]);
+            if (addsum[7] > 0) {
+                output += printMaterial(item.week, addsum[7], color["金"]);
+            }
+            if (addsum[8] > 0) {
+                output += printMaterial('其他/皇冠.png', addsum[8], color["金"]);
             }
             return output;
         }
-
-
-
-
-
     </script>
 </body>
 
