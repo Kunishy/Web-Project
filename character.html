@@ -158,6 +158,7 @@
             </div>
             <div class="weapons">
                 <div id="bow" class="weapons-container">
+
                 </div>
             </div>
         </div>
@@ -176,12 +177,38 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
+
         fetch('https://kunishy.github.io/Web-Project/characters.json')
             .then(response => response.json())
             .then(data => {
                 window.characters = data;
-
+                start()
             });
+        
+        function start(){
+            let bow = document.getElementById("bow");
+            let content ="";
+            for (let item of characters) 
+            {
+                if ((Object.values(elementStates).every(value => value === false) == true && Object.values(optionStates).every(value => value === false) == true && item.star==='5')) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+            }
+            for (let item of characters) 
+            {
+                if ((Object.values(elementStates).every(value => value === false) == true && Object.values(optionStates).every(value => value === false) == true &&item.star==='4')) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+            }
+            bow.innerHTML = content;
+        }
+            
 
         let optionStates = {
             bow: false,
@@ -253,19 +280,53 @@
             let bow = document.getElementById("bow");
             let content = "";
             for (let item of characters) {
-                if ((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon])) {
+                if ((Object.values(elementStates).every(value => value === false) == true && Object.values(optionStates).every(value => value === false) == true && item.star==='5')) {
                     content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
                         '<div class="name">' + item.name + '</div>' +
                         '</div>';
                 }
-                else if ((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]])) {
+
+                else if ((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon] && item.star==='5')) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+                else if ((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]]) && item.star==='5') {
                     content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px">' +
                         '<div class="name">' + item.name + '</div>' +
                         '</div>';
                 }
-                else if (elementStates[element[item.element]] && optionStates[item.weapon]) {
+                else if (elementStates[element[item.element]] && optionStates[item.weapon] && item.star==='5') {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '" width="100px">' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+            }
+            for (let item of characters) {
+                if ((Object.values(elementStates).every(value => value === false) == true && Object.values(optionStates).every(value => value === false) == true && item.star==='4')) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+
+                else if ((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon] && item.star==='4')) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+                else if ((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]]) && item.star==='4') {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px">' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+                else if (elementStates[element[item.element]] && optionStates[item.weapon] && item.star==='4') {
                     content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '" width="100px">' +
                         '<div class="name">' + item.name + '</div>' +
@@ -274,6 +335,7 @@
             }
             bow.innerHTML = content;
         }
+        
         async function display(name) {
             let item = characters.find(item => item.name === name);
             let output = "";
@@ -300,7 +362,7 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option>'
                 + '<option value="90" selected>90</option></select></div></div>'
-                + '<div style = "display:row left;"> <div>選擇天賦等級 </div>'
+                + '<div style = "display:row ;"> <div>選擇天賦等級 </div>'
                 + 'A&nbsp;&nbsp;<select name="level-startA" id="level-startA" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
                 + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\',\'A\')">'
                 + '<option value="1" selected>1</option>'
