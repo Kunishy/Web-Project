@@ -273,7 +273,7 @@
                 + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
                 + '<div>選擇等級</div><div>'
                 + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'start\', ' + item + ')">'
+                + 'onchange="updateLevelOptions(\'start\', \'' + item.name + '\')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
@@ -282,7 +282,7 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option></select><span>~</span>'
                 + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'end\', ' + item + ')">'
+                + 'onchange="updateLevelOptions(\'end\', \'' + item.name + '\')">'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
                 + '<option value="50">50</option>'
@@ -298,7 +298,8 @@
             output = await update(1, 90, output, item);
             document.getElementById("display").innerHTML = output;
         }
-        async function updateLevelOptions(type, item) {
+        async function updateLevelOptions(type, name) {
+            let item = characters.find(item => item.name === name);
             const startSelect = document.getElementById('level-start');
             const endSelect = document.getElementById('level-end');
             const startValue = parseInt(startSelect.value);
