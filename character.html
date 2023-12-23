@@ -273,7 +273,7 @@
                 + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
                 + '<div>選擇等級</div><div>'
                 + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'start\', \'' + item + '\')">'
+                + 'onchange="updateLevelOptions(\'start\', ' + item + ')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
@@ -282,7 +282,7 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option></select><span>~</span>'
                 + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
+                + 'onchange="updateLevelOptions(\'end\', ' + item + ')">'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
                 + '<option value="50">50</option>'
@@ -291,7 +291,7 @@
                 + '<option value="80">80</option>'
                 + '<option value="90" selected>90</option></select></div></div>'
                 + '<div class="text-container" > <div>選擇天賦等級 </div></div> '
-                + '<button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+                + '<button onclick="openPop(' + item + ')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
                 + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
                 + '<hr><div>計算結果</div>'
                 + '<div class="material" id="material">';
@@ -301,7 +301,6 @@
         async function updateLevelOptions(type, item) {
             const startSelect = document.getElementById('level-start');
             const endSelect = document.getElementById('level-end');
-
             const startValue = parseInt(startSelect.value);
             const endValue = parseInt(endSelect.value);
 
@@ -397,7 +396,7 @@
             }
             return result.length > 0 ? result : [{ arrayName: null, sum: 0 }];
         }
-
+        
         let color = {
             "金":"#af6f2a", 
             "紫":"#745a95",
@@ -413,6 +412,7 @@
             //output = printElement(item, add, output);
             output += printMaterial("其他/摩拉.png", add[0].sum + 'k',color["藍"]);
             output += printMaterial("其他/紫經驗書.png", add[1].sum,color["紫"]);
+            console.log('選擇了：', add[2].sum);
             if (add[2].sum > 0) {
                 output += printMaterial(item.gray, add[2].sum ,color["灰"]);
             }
