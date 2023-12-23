@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>武器</title>
+    <title>角色</title>
     <style type="text/CSS">
         body {
             background-color: #352F44;
@@ -41,15 +41,15 @@
         }
         .items{
             text-align: center;
-            width: 13%;
+            width: "100px";
             background-color: #FAF0E6;
             border-radius: 5px;
-            margin: -5px;
+            margin: 5px;
         }
         .name{
             color: black;
             margin: -1px;
-            font-size: xx-small;
+            font-size: small;
         }
         .weapons{
             display: flex;
@@ -59,9 +59,6 @@
         .weapons-container{
             display: flex;
             flex-flow: wrap;
-        }
-        .items{
-            margin: 5px;
         }
         img{
             border-radius: 5px;
@@ -139,34 +136,36 @@
 <body>
     <div class="flex-container">
         <div style="width: 40%;">
-            <div id = "elementFilter" class="select-container">
-                <div class="option" id="oppyro" onclick="elementOption('火')" title="火" value = "pyro">火</div>
-                <div class="option" id="ophydro" onclick="elementOption('水')" title="水" value = "hydro">水</div>
-                <div class="option" id="opanemo" onclick="elementOption('風')" title="風" value = "anemo">風</div>
-                <div class="option" id="opelectro" onclick="elementOption('雷')" title="雷" value = "electro">雷</div>
-                <div class="option" id="opdendro" onclick="elementOption('草')" title="草" value = "dendro">草</div>
-                <div class="option" id="opcryo" onclick="elementOption('冰')" title="冰" value = "cryo">冰</div>
-                <div class="option" id="opgeo" onclick="elementOption('岩')" title="岩" value = "geo">岩</div>
+            <div id="elementFilter" class="select-container">
+                <div class="option" id="oppyro" onclick="elementOption('火')" title="火" value="pyro">火</div>
+                <div class="option" id="ophydro" onclick="elementOption('水')" title="水" value="hydro">水</div>
+                <div class="option" id="opanemo" onclick="elementOption('風')" title="風" value="anemo">風</div>
+                <div class="option" id="opelectro" onclick="elementOption('雷')" title="雷" value="electro">雷</div>
+                <div class="option" id="opdendro" onclick="elementOption('草')" title="草" value="dendro">草</div>
+                <div class="option" id="opcryo" onclick="elementOption('冰')" title="冰" value="cryo">冰</div>
+                <div class="option" id="opgeo" onclick="elementOption('岩')" title="岩" value="geo">岩</div>
             </div>
-            <div id ="weaponFilter" class="select-container">
-                <div class="option" id="opbow" onclick="toggleOption('bow')" title="弓" value = "bow">弓</div>
-                <div class="option" id="opcatalyst" onclick="toggleOption('catalyst')" title="法器" value = "catalyst">法器</div>
-                <div class="option" id="opclaymore" onclick="toggleOption('claymore')" title="雙手劍" value = "claymore">雙手劍</div>
-                <div class="option" id="oppole" onclick="toggleOption('pole')" title="長柄武器" value = "pole">長柄武器</div>
-                <div class="option" id="opsword" onclick="toggleOption('sword')" title="單手劍" value = "sword">單手劍</div>
+            <div id="weaponFilter" class="select-container">
+                <div class="option" id="opbow" onclick="toggleOption('bow')" title="弓" value="bow">弓</div>
+                <div class="option" id="opcatalyst" onclick="toggleOption('catalyst')" title="法器" value="catalyst">法器
+                </div>
+                <div class="option" id="opclaymore" onclick="toggleOption('claymore')" title="雙手劍" value="claymore">雙手劍
+                </div>
+                <div class="option" id="oppole" onclick="toggleOption('pole')" title="長柄武器" value="pole">長柄武器</div>
+                <div class="option" id="opsword" onclick="toggleOption('sword')" title="單手劍" value="sword">單手劍</div>
             </div>
             <div class="weapons">
                 <div id="bow" class="weapons-container">
-                    
-                    
+
+
                 </div>
-                
+
             </div>
         </div>
 
 
         <div id="display" style="border: 5px solid #5C5470; border-radius: 5px; width: 60%">
-            
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -177,162 +176,302 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script >
-        // 异步加载 JSON 文件
+    <script>
         fetch('https://kunishy.github.io/Web-Project/characters.json')
-        .then(response => response.json())
-        .then(data => {
-            // 将角色数据存储在全局变量中
-            window.characters = data;
-            // 初始化页面
+            .then(response => response.json())
+            .then(data => {
+                window.characters = data;
 
-        });
+            });
 
+        let optionStates = {
+            bow: false,
+            catalyst: false,
+            claymore: false,
+            pole: false,
+            sword: false,
 
-    let optionStates = {
-        bow: false,
-        catalyst: false,
-        claymore: false,
-        pole: false,
-        sword: false,
-        
-    };
-    let elementStates = {
-        pyro: false,
-        hydro: false,
-        anemo: false,
-        electro: false,
-        dendro: false,
-        cryo: false,
-        geo: false
-    };
-    let element = {
-        火: 'pyro',
-        水: 'hydro',
-        風: 'anemo',
-        雷: 'electro',
-        草: 'dendro',
-        冰: 'cryo',
-        岩: 'geo'
-    };
-    let star = {
-        5:'five',
-        4:'four',
-        3:'three'
-    };
+        };
+        let elementStates = {
+            pyro: false,
+            hydro: false,
+            anemo: false,
+            electro: false,
+            dendro: false,
+            cryo: false,
+            geo: false
+        };
+        let element = {
+            火: 'pyro',
+            水: 'hydro',
+            風: 'anemo',
+            雷: 'electro',
+            草: 'dendro',
+            冰: 'cryo',
+            岩: 'geo'
+        };
+        let star = {
+            5: 'five',
+            4: 'four',
+            3: 'three'
+        };
 
-    function toggleOption(option) {
-        
-        console.log('選擇了：',option);
-        optionStates[option] = !optionStates[option];
-        for (let x in optionStates) {
-            let item = document.getElementById('op' + x);
-            item.setAttribute("class", optionStates[x] ? "selected-option" : "option");
-        }
-        
-        updateDisplay();
-    }
-    function elementOption(option) {
-        
-        console.log('選擇了：',option);
-        elementStates[element[option]] = !elementStates[element[option]];
-        for (let x in elementStates) {
-            let item = document.getElementById('op' + x);
-            item.setAttribute("class", elementStates[x] ? "selected-option" : "option");
-        }
-        
-        updateDisplay();
-    }
+        function toggleOption(option) {
 
-    function updateDisplay() {
-        
-        let weaponTypes = ["bow", "catalyst", "claymore", "pole", "sword"];
-        let elementTypes = ["火", "水", "風", "雷", "草" , "冰", "岩"];
-        let bow = document.getElementById("bow");
-        let content = "";
-        for (let item of characters) {
-            if((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon])){
-                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
-                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
-                        '<div class="name">'+item.name+'</div>'+
-                        '</div>';
+            console.log('選擇了：', option);
+            optionStates[option] = !optionStates[option];
+            for (let x in optionStates) {
+                let item = document.getElementById('op' + x);
+                item.setAttribute("class", optionStates[x] ? "selected-option" : "option");
             }
-            else if((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]])){
-                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
-                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
-                        '<div class="name">'+item.name+'</div>'+
-                        '</div>';
-            }
-            else if(elementStates[element[item.element]] && optionStates[item.weapon] )
-            {
-                content += '<div class="items" title="'+item.name+'" onclick="display(\''+item.name+'\')">'+
-                        '<img src="'+item.img +'" class="'+star[item.star]+'" id="'+item.name+'">'+
-                        '<div class="name">'+item.name+'</div>'+
-                        '</div>';
-            }
-        }
-        bow.innerHTML = content;
-    }
-    async function display(name) {
-    const item = characters.find(item => item.name === name);
-    let output = "";
-    output = '<div class="display-container">'
-        + '<img src="' + item.img+ '"class="'+star[item.star]+'" width="100px">'
-        + '<div class="text-container">'
-        + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
-        + '<div>選擇等級</div><div>'
-        + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-        + 'onchange="updateLevelOptions(\'start\', \'' + item.name + '\')">'
-        + '<option value="1" selected>1</option>'
-        + '<option value="20">20</option>'
-        + '<option value="40">40</option>'
-        + '<option value="50">50</option>'
-        + '<option value="60">60</option>'
-        + '<option value="70">70</option>'
-        + '<option value="80">80</option></select><span>~</span>'
-        + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-        + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
-        + '<option value="20">20</option>'
-        + '<option value="40">40</option>'
-        + '<option value="50">50</option>'
-        + '<option value="60">60</option>'
-        + '<option value="70">70</option>'
-        + '<option value="80">80</option>'
-        + '<option value="90" selected>90</option></select></div>'
-        + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
-        + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
-        + '<hr><div>計算結果</div>'
-        + '<div class="material" id="material">';
-    //output = await update(1, 90, output, item);
-    document.getElementById("display").innerHTML = output;
-    }
-    const character = {
-        money: [20, 136, 156, 231, 319, 423, 805],
-        book: [5, 29, 29, 43, 60, 81, 172],
-        g1: [0, 3, 15, 0, 0, 0, 0],
-        g2: [0, 0, 0, 12, 18, 0, 0],
-        g3: [0, 0, 0, 0, 0, 12, 24],
-        m1: [0, 1, 0, 0, 0, 0, 0],
-        m2: [0, 0, 3, 6, 0, 0, 0],
-        m3: [0, 0, 0, 0, 3, 6, 0],
-        m4: [0, 5, 0, 0, 0, 0, 6],
-        sp: [0, 3, 10, 20, 30, 45, 60],
-        boss: [0, 0, 2, 4, 8 ,12, 20],
-    };
 
-    const talent= {
-        money: [12.5, 17.5, 25, 30, 37.5, 120, 260, 700],
-        g1: [0, 2, 8, 0, 0, 0, 0],
-        g2: [0, 0, 0, 6, 9, 0, 0],
-        g3: [0, 0, 0, 0, 0, 6, 12],
-        p1: [0, 3, 12, 0, 0, 0, 0],
-        p2: [0, 0, 0, 6, 12, 0, 0],
-        p3: [0, 0, 0, 0, 0, 9, 18],
-        w1: [0, 3, 0, 0, 0, 0, 0],
-        w2: [0, 0, 3, 6, 0, 0, 0],
-        w3: [0, 0, 0, 0, 3, 6, 0],
-        w4: [0, 0, 0, 0, 0, 0, 4],
-    };
+            updateDisplay();
+        }
+        function elementOption(option) {
+
+            console.log('選擇了：', option);
+            elementStates[element[option]] = !elementStates[element[option]];
+            for (let x in elementStates) {
+                let item = document.getElementById('op' + x);
+                item.setAttribute("class", elementStates[x] ? "selected-option" : "option");
+            }
+
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+
+            let weaponTypes = ["bow", "catalyst", "claymore", "pole", "sword"];
+            let elementTypes = ["火", "水", "風", "雷", "草", "冰", "岩"];
+            let bow = document.getElementById("bow");
+            let content = "";
+            for (let item of characters) {
+                if ((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon])) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+                else if ((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]])) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px">' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+                else if (elementStates[element[item.element]] && optionStates[item.weapon]) {
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                        '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '" width="100px">' +
+                        '<div class="name">' + item.name + '</div>' +
+                        '</div>';
+                }
+            }
+            bow.innerHTML = content;
+        }
+        async function display(name) {
+            let item = characters.find(item => item.name === name);
+            let output = "";
+            output = '<div class="display-container">'
+                + '<img src="' + item.img + '"class="' + star[item.star] + '" width="100px">'
+                + '<div class="text-container">'
+                + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
+                + '<div>選擇等級</div><div>'
+                + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
+                + 'onchange="updateLevelOptions(\'start\', \'' + item.name + '\')">'
+                + '<option value="1" selected>1</option>'
+                + '<option value="20">20</option>'
+                + '<option value="40">40</option>'
+                + '<option value="50">50</option>'
+                + '<option value="60">60</option>'
+                + '<option value="70">70</option>'
+                + '<option value="80">80</option></select><span>~</span>'
+                + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
+                + 'onchange="updateLevelOptions(\'end\', \'' + item.name + '\')">'
+                + '<option value="20">20</option>'
+                + '<option value="40">40</option>'
+                + '<option value="50">50</option>'
+                + '<option value="60">60</option>'
+                + '<option value="70">70</option>'
+                + '<option value="80">80</option>'
+                + '<option value="90" selected>90</option></select></div>'
+                + '</div><button onclick="openPop(\'' + item.name + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+                + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
+                + '<hr><div>計算結果</div>'
+                + '<div class="material" id="material">';
+            output = await update(1, 90, output, item);
+            document.getElementById("display").innerHTML = output;
+        }
+        async function updateLevelOptions(type, item) {
+            const startSelect = document.getElementById('level-start');
+            const endSelect = document.getElementById('level-end');
+
+            const startValue = parseInt(startSelect.value);
+            const endValue = parseInt(endSelect.value);
+
+            if (type === 'start') {
+                for (let i = 20; i <= 90; i += 10) {
+                    const option = endSelect.querySelector(`option[value="${i}"]`);
+                    if (option) {
+                        option.disabled = i <= startValue;
+                    }
+                }
+            } else if (type === 'end') {
+                for (let i = 20; i <= 90; i += 10) {
+                    const option = startSelect.querySelector(`option[value="${i}"]`);
+                    if (option) {
+                        option.disabled = i >= endValue;
+                    }
+                }
+            }
+            let materialContainer = "";
+            materialContainer = update(startValue, endValue, materialContainer, item);
+            document.getElementById("material").innerHTML = materialContainer;
+        }
+
+
+        function sumValuesBetween(obj, start, end) {
+            const result = [];
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    const array = obj[key];
+                    if (start === 1 && end === 20) {
+                        sum = array[0];
+                    } else if (start === 1 && end === 40) {
+                        sum = array.slice(0, 2).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 50) {
+                        sum = array.slice(0, 3).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 60) {
+                        sum = array.slice(0, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 70) {
+                        sum = array.slice(0, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 80) {
+                        sum = array.slice(0, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 1 && end === 90) {
+                        sum = array.slice(0, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 20 && end === 40) {
+                        sum = array[1];
+                    } else if (start === 20 && end === 50) {
+                        sum = array.slice(1, 3).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 20 && end === 60) {
+                        sum = array.slice(1, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 20 && end === 70) {
+                        sum = array.slice(1, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 20 && end === 80) {
+                        sum = array.slice(1, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 20 && end === 90) {
+                        sum = array.slice(1, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 40 && end === 50) {
+                        sum = array[2];
+                    } else if (start === 40 && end === 60) {
+                        sum = array.slice(2, 4).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 40 && end === 70) {
+                        sum = array.slice(2, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 40 && end === 80) {
+                        sum = array.slice(2, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 40 && end === 90) {
+                        sum = array.slice(2, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 50 && end === 60) {
+                        sum = array[3];
+                    } else if (start === 50 && end === 70) {
+                        sum = array.slice(3, 5).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 50 && end === 80) {
+                        sum = array.slice(3, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 50 && end === 90) {
+                        sum = array.slice(3, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 60 && end === 70) {
+                        sum = array[4];
+                    } else if (start === 60 && end === 80) {
+                        sum = array.slice(4, 6).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 60 && end === 90) {
+                        sum = array.slice(4, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 70 && end === 80) {
+                        sum = array[5];
+                    } else if (start === 70 && end === 90) {
+                        sum = array.slice(5, 7).reduce((acc, val) => acc + val, 0);
+                    } else if (start === 80 && end === 90) {
+                        sum = array[6];
+                    } else {
+                        for (let i = start - 1; i < end; i++) {
+                            sum += array[i];
+                        }
+                    }
+                    result.push({ arrayName: key, sum: sum });
+                }
+            }
+            return result.length > 0 ? result : [{ arrayName: null, sum: 0 }];
+        }
+
+        function update(start, end, output, item) {
+            //let item = characters.find(item => item.name === name);
+            console.log('選擇了：', item.name);
+            let add = [];
+            add = sumValuesBetween(character, start, end);
+            //talent = sumValuesBetween(talent, start, end);
+            //output = printElement(item, add, output);
+            output += printMaterial("其他/摩拉.png", add[0].sum + 'k');
+            output += printMaterial("其他/紫經驗書.png", add[1].sum);
+            if (add[2].sum > 0) {
+                output += printMaterial(item.gray, add[2].sum);
+            }
+            if (add[3].sum > 0) {
+                output += printMaterial(item.green, add[3].sum);
+            }
+            if (add[4].sum > 0) {
+                output += printMaterial(item.blue, add[4].sum);
+            }
+            if (add[5].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '1.png', add[5].sum);
+            }
+            if (add[6].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '2.png', add[6].sum);
+            }
+            if (add[7].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '3.png', add[7].sum);
+            }
+            if (add[8].sum > 0) {
+                output += printMaterial('突破石/' + item.element + '4.png', add[8].sum);
+            }
+            if (add[9].sum > 0) {
+                output += printMaterial(item.break, add[9].sum);
+            }
+            if (add[10].sum > 0) {
+                output += printMaterial(item.boss, add[10].sum);
+            }
+            return output;
+        }
+
+        const character = {
+            money: [20, 136, 156, 231, 319, 423, 805],
+            book: [5, 29, 29, 43, 60, 81, 172],
+            g1: [0, 3, 15, 0, 0, 0, 0],
+            g2: [0, 0, 0, 12, 18, 0, 0],
+            g3: [0, 0, 0, 0, 0, 12, 24],
+            m1: [0, 1, 0, 0, 0, 0, 0],
+            m2: [0, 0, 3, 6, 0, 0, 0],
+            m3: [0, 0, 0, 0, 3, 6, 0],
+            m4: [0, 0, 0, 0, 0, 0, 6],
+            sp: [0, 3, 10, 20, 30, 45, 60],
+            boss: [0, 0, 2, 4, 8, 12, 20],
+        };
+
+        const talent = {
+            money: [12.5, 17.5, 25, 30, 37.5, 120, 260, 700],
+            g1: [6, 0, 0, 0, 0, 0, 0, 0, 0],
+            g2: [0, 3, 4, 6, 9, 0, 0, 0, 0],
+            g3: [0, 0, 0, 0, 0, 4, 6, 9, 12],
+            t1: [3, 0, 0, 0, 0, 0, 0, 0, 0],
+            t2: [0, 2, 4, 6, 9, 0, 0, 0, 0],
+            t3: [0, 0, 0, 0, 0, 4, 6, 12, 16],
+            w1: [0, 0, 0, 0, 0, 1, 1, 2, 2],
+            k1: [0, 0, 0, 0, 0, 0, 0, 0, 1],
+        };
+
+        function printMaterial(imgUrl, value) {
+            return '<div class="items" >'
+                + '<img src="' + imgUrl + '" style=" background-color: #53799e;">'
+                + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
+        }
+
+
 
 
 
