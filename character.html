@@ -290,12 +290,82 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option>'
                 + '<option value="90" selected>90</option></select></div></div>'
-                + '<div class="text-container" > <div>選擇天賦等級 </div></div> '
-                + '<button onclick="openPop(' + item + ')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+                + '<div class="" style = "display:row"> <div>選擇天賦等級 </div>'
+                + 'A&nbsp;&nbsp;<select name="level-startA" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + '<option value="1" selected>1</option>'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option></select><span>~</span>'
+                + '<select name="level-endA" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option>'
+                + '<option value="10" selected>10</option></select><br>'
+                +'E&nbsp;&nbsp;<select name="level-starteE" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + '<option value="1" selected>1</option>'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option></select><span>~</span>'
+                + '<select name="level-endE" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option>'
+                + '<option value="10" selected>10</option></select><br>'
+                +'Q&nbsp;&nbsp;<select name="level-startQ" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'start\', \'' + item.name + '\')">'
+                + '<option value="1" selected>1</option>'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option></select><span>~</span>'
+                + '<select name="level-endQ" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;margin: 5px;"'
+                + 'onchange="updateLevelOptionstalent(\'end\', \'' + item.name + '\')">'
+                + '<option value="2">2</option>'
+                + '<option value="3">3</option>'
+                + '<option value="4">4</option>'
+                + '<option value="5">5</option>'
+                + '<option value="6">6</option>'
+                + '<option value="7">7</option>'
+                + '<option value="8">8</option>'
+                + '<option value="9">9</option>'
+                + '<option value="10" selected>10</option></select><br>'
+                + '</div>'
+                + '<button onclick="openPop(' + item + ')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;margin: 5px;">'
                 + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
-                + '<hr><div>計算結果</div>'
-                + '<div class="material" id="material">';
-            output = await update(1, 90, output, item);
+                + '<hr><div>升級素材</div>'
+                + '<div class="material" id="material" ></div>';
+                output = await update(1, 90, output, item);
+                output += '<hr style="width: 100%;"></hr ><div>天賦素材</div><div class="material" id="materialtalent">';
+            
+            output = await updatetalent(1, 10, output, item);
             document.getElementById("display").innerHTML = output;
         }
         async function updateLevelOptions(type, name) {
@@ -323,6 +393,32 @@
             let materialContainer = "";
             materialContainer = update(startValue, endValue, materialContainer, item);
             document.getElementById("material").innerHTML = materialContainer;
+        }
+        async function updateLevelOptionstalent(type, name) {
+            let item = characters.find(item => item.name === name);
+            const startSelect = document.getElementById('level-start');
+            const endSelect = document.getElementById('level-end');
+            const startValue = parseInt(startSelect.value);
+            const endValue = parseInt(endSelect.value);
+
+            if (type === 'start') {
+                for (let i = 1; i <= 10; i += 1) {
+                    const option = endSelect.querySelector(`option[value="${i}"]`);
+                    if (option) {
+                        option.disabled = i <= startValue;
+                    }
+                }
+            } else if (type === 'end') {
+                for (let i = 1; i <= 10; i += 1) {
+                    const option = startSelect.querySelector(`option[value="${i}"]`);
+                    if (option) {
+                        option.disabled = i >= endValue;
+                    }
+                }
+            }
+            let materialContainer = "";
+            materialContainer = updatetalent(startValue, endValue, materialContainer, item);
+            document.getElementById("materialtalent").innerHTML = materialContainer;
         }
 
 
@@ -474,6 +570,42 @@
             return '<div class="items"  >'
                 + '<img src="' + imgUrl + '" style=" background-color: '+color+'">'
                 + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
+        }
+        function updatetalent(start, end, output, item) {
+            //let item = characters.find(item => item.name === name);
+            let add = [];
+            //add = sumValuesBetween(character, start, end);
+            add = sumValuesBetween(talent, start, end);
+            //output = printElement(item, add, output);
+            
+            output += printMaterial("其他/摩拉.png", add[0].sum + 'k',color["藍"]);
+            
+            console.log('選擇了：', add[2].sum);
+            if (add[1].sum > 0) {
+                output += printMaterial(item.gray, add[1].sum ,color["灰"]);
+            }
+            if (add[2].sum > 0) {
+                output += printMaterial(item.green, add[2].sum ,color["綠"]);
+            }
+            if (add[3].sum > 0) {
+                output += printMaterial(item.blue, add[3].sum,color["藍"]);
+            }
+            if (add[4].sum > 0) {
+                output += printMaterial('Talent/Teachings of '+ item.talent+ '.png', add[4].sum,color["綠"]);
+            }
+            if (add[5].sum > 0) {
+                output += printMaterial('Talent/Guide of ' + item.talent + '.png', add[5].sum,color["藍"]);
+            }
+            if (add[6].sum > 0) {
+                output += printMaterial('Talent/Philosophies of ' + item.talent + '.png', add[6].sum,color["紫"]);
+            }
+            if (add[7].sum > 0) {
+                output += printMaterial( item.week , add[7].sum,color["金"]);
+            }
+            if (add[8].sum > 0) {
+                output += printMaterial('其他/皇冠.png', add[8].sum,color["金"]);
+            }
+            return output;
         }
 
 
