@@ -41,7 +41,7 @@
         }
         .items{
             text-align: center;
-            width: "100px";
+            width: calc(100%/6);
             background-color: #FAF0E6;
             border-radius: 5px;
             margin: 5px;
@@ -244,19 +244,19 @@
             let content = "";
             for (let item of characters) {
                 if ((Object.values(elementStates).every(value => value === false) == true && optionStates[item.weapon])) {
-                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px" >' +
                         '<div class="name">' + item.name + '</div>' +
                         '</div>';
                 }
                 else if ((Object.values(optionStates).every(value => value === false) == true && elementStates[element[item.element]])) {
-                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '"  width="100px">' +
                         '<div class="name">' + item.name + '</div>' +
                         '</div>';
                 }
                 else if (elementStates[element[item.element]] && optionStates[item.weapon]) {
-                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" width="100px">' +
+                    content += '<div class="items" title="' + item.name + '" onclick="display(\'' + item.name + '\')" >' +
                         '<img src="' + item.img + '" class="' + star[item.star] + '" id="' + item.name + '" width="100px">' +
                         '<div class="name">' + item.name + '</div>' +
                         '</div>';
@@ -289,8 +289,9 @@
                 + '<option value="60">60</option>'
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option>'
-                + '<option value="90" selected>90</option></select></div>'
-                + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+                + '<option value="90" selected>90</option></select></div></div>'
+                + '<div class="text-container" > <div>選擇天賦等級 </div></div> '
+                + '<button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
                 + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
                 + '<hr><div>計算結果</div>'
                 + '<div class="material" id="material">';
@@ -410,8 +411,8 @@
             add = sumValuesBetween(character, start, end);
             //talent = sumValuesBetween(talent, start, end);
             //output = printElement(item, add, output);
-            output += printMaterial("其他/摩拉.png", add[0].sum + 'k');
-            output += printMaterial("其他/紫經驗書.png", add[1].sum);
+            output += printMaterial("其他/摩拉.png", add[0].sum + 'k',color["藍"]);
+            output += printMaterial("其他/紫經驗書.png", add[1].sum,color["紫"]);
             if (add[2].sum > 0) {
                 output += printMaterial(item.gray, add[2].sum ,color["灰"]);
             }
@@ -469,7 +470,7 @@
         };
 
         function printMaterial(imgUrl, value, color) {
-            return '<div class="items" >'
+            return '<div class="items"  >'
                 + '<img src="' + imgUrl + '" style=" background-color: '+color+'">'
                 + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
         }
