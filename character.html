@@ -156,10 +156,7 @@
             </div>
             <div class="weapons">
                 <div id="bow" class="weapons-container">
-
-
                 </div>
-
             </div>
         </div>
 
@@ -276,7 +273,7 @@
                 + '<div id="chName" style="font-size:20px">' + item.name + '</div>'
                 + '<div>選擇等級</div><div>'
                 + '<select name="level-start" id="level-start" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'start\', \'' + item.name + '\')">'
+                + 'onchange="updateLevelOptions(\'start\', \'' + item + '\')">'
                 + '<option value="1" selected>1</option>'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
@@ -285,7 +282,7 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option></select><span>~</span>'
                 + '<select name="level-end" id="level-end" style="background-color: #745a95; color: #FAF0E6; border-radius:5px;"'
-                + 'onchange="updateLevelOptions(\'end\', \'' + item.name + '\')">'
+                + 'onchange="updateLevelOptions(\'end\', \'' + item + '\')">'
                 + '<option value="20">20</option>'
                 + '<option value="40">40</option>'
                 + '<option value="50">50</option>'
@@ -293,7 +290,7 @@
                 + '<option value="70">70</option>'
                 + '<option value="80">80</option>'
                 + '<option value="90" selected>90</option></select></div>'
-                + '</div><button onclick="openPop(\'' + item.name + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
+                + '</div><button onclick="openPop(\'' + item + '\')" style="font-size: 16px; background-color: #af6f2a; color: #FAF0E6; border-radius:8px;">'
                 + '&nbsp;推薦武器&nbsp;</button><div id="pop"></div></div>'
                 + '<hr><div>計算結果</div>'
                 + '<div class="material" id="material">';
@@ -400,9 +397,15 @@
             return result.length > 0 ? result : [{ arrayName: null, sum: 0 }];
         }
 
+        let color = {
+            "金":"#af6f2a", 
+            "紫":"#745a95",
+            "藍":"#53799e", 
+            "綠":"#496C65", 
+            "灰":"#5F5F6C" 
+        };
         function update(start, end, output, item) {
             //let item = characters.find(item => item.name === name);
-            console.log('選擇了：', item.name);
             let add = [];
             add = sumValuesBetween(character, start, end);
             //talent = sumValuesBetween(talent, start, end);
@@ -410,31 +413,31 @@
             output += printMaterial("其他/摩拉.png", add[0].sum + 'k');
             output += printMaterial("其他/紫經驗書.png", add[1].sum);
             if (add[2].sum > 0) {
-                output += printMaterial(item.gray, add[2].sum);
+                output += printMaterial(item.gray, add[2].sum ,color["灰"]);
             }
             if (add[3].sum > 0) {
-                output += printMaterial(item.green, add[3].sum);
+                output += printMaterial(item.green, add[3].sum,color["綠"]);
             }
             if (add[4].sum > 0) {
-                output += printMaterial(item.blue, add[4].sum);
+                output += printMaterial(item.blue, add[4].sum,color["藍"]);
             }
             if (add[5].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '1.png', add[5].sum);
+                output += printMaterial('突破石/' + item.element + '1.png', add[5].sum,color["綠"]);
             }
             if (add[6].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '2.png', add[6].sum);
+                output += printMaterial('突破石/' + item.element + '2.png', add[6].sum,color["藍"]);
             }
             if (add[7].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '3.png', add[7].sum);
+                output += printMaterial('突破石/' + item.element + '3.png', add[7].sum,color["紫"]);
             }
             if (add[8].sum > 0) {
-                output += printMaterial('突破石/' + item.element + '4.png', add[8].sum);
+                output += printMaterial('突破石/' + item.element + '4.png', add[8].sum,color["金"]);
             }
             if (add[9].sum > 0) {
-                output += printMaterial(item.break, add[9].sum);
+                output += printMaterial(item.break, add[9].sum,color["灰"]);
             }
             if (add[10].sum > 0) {
-                output += printMaterial(item.boss, add[10].sum);
+                output += printMaterial('首領素材/' +item.boss, add[10].sum,color["紫"]);
             }
             return output;
         }
@@ -465,9 +468,9 @@
             k1: [0, 0, 0, 0, 0, 0, 0, 0, 1],
         };
 
-        function printMaterial(imgUrl, value) {
+        function printMaterial(imgUrl, value, color) {
             return '<div class="items" >'
-                + '<img src="' + imgUrl + '" style=" background-color: #53799e;">'
+                + '<img src="' + imgUrl + '" style=" background-color: '+color+'">'
                 + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
         }
 
