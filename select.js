@@ -1513,7 +1513,7 @@ function findArrayIndex(word, arrays) {
 function printMaterial(name, imgUrl, value) {
     return '<div class="items" title="' + name + '">'
         + '<img src="' + imgUrl + '" style=" background-color: #53799e;">'
-        + '<div class="name" style="font-size: 14px">' + value + '</div></div>';
+        + '<div class="name" style="font-size: 100%">' + value + '</div></div>';
 }
 
 function printElement(result, add, output) {
@@ -1521,797 +1521,797 @@ function printElement(result, add, output) {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)史萊姆凝液.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)史萊姆清.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)史萊姆原漿.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "愚人眾") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)新兵的徽記.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)士官的徽記.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)尉官的徽記.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "盜寶團") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)尋寶鴉印.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)藏銀鴉印.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)攫金鴉印.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "丘丘薩滿") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)導能繪卷.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)封魔繪卷.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)禁咒繪卷.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "丘丘射手") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)牢固的箭鏃.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)銳利的箭鏃.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)歷戰的箭鏃.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "丘丘") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)破損的面具.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)汙穢的面具.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)不祥的面具.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "騙騙花") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)騙騙花蜜.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)微光花蜜.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)原素花蜜.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "野伏眾") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)破舊的刀鐔.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)影打刀鐔.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)名刀鐔.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "飄浮靈") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)浮游乾核.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)浮游幽核.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)浮游晶化核.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "蕈獸") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)蕈獸孢子.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)螢光孢粉.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)孢囊晶塵.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "鍍金旅團") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)褪色紅綢.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)鑲邊紅綢.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)織金紅綢.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "發條機關") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)齧合齒輪.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)機關正齒輪.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)奇械機芯齒輪.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "原海異種") {
         if (add[2].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(灰)異海凝珠.png" style=" background-color: #5F5F6C;">'
-                + '<div class="name" style="font-size: 14px">' + add[2].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[2].sum + '</div></div>';
         }
         if (add[3].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)異海之塊.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[3].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[3].sum + '</div></div>';
         }
         if (add[4].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)異色結晶石.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[4].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[4].sum + '</div></div>';
         }
     } else if (result === "丘丘王") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)沉重號角.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)黑銅號角.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)黑晶號角.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "深淵法師") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)地脈的舊枝.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)地脈的枯葉.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)地脈的新芽.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "遺蹟守衛") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)混沌裝置.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)混沌迴路.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)混沌爐心.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "螢術士") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)霧虛花粉.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)霧虛草囊.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)霧虛燈芯.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "債務處理人") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)獵兵祭刀.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)特工祭刀.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)督察長祭刀.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "龍蜥") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)脆弱的骨片.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)結實的骨片.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)石化的骨片.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "遺蹟機兵") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)混沌機關.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)混沌樞紐.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)混沌真眼.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "冬國仕女") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)黯淡稜鏡.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)水晶稜鏡.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)偏光稜鏡.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "獸境之狼") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)隱獸指爪.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)隱獸利爪.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)隱獸鬼爪.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "黑蛇眾") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)晦暗刻像.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)夤夜刻像.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)幽邃刻像.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "活化蕈獸") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)失活菌核.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)休眠菌核.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)茁壯菌核.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "遺蹟龍獸") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)混沌容器.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)混沌模組.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)混沌錨栓.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "元能構裝體") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)破缺稜晶.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)混濁稜晶.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)輝光稜晶.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "聖骸獸") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)殘毀的橫脊.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)密固的橫脊.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)鍥紋的橫脊.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "丘丘遊俠") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)來自何處的待放之花.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)何人所珍藏之花.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)漫遊者的盛放之花.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "濁水幻靈") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)濁水的一滴.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)濁水的一掬.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)初生的濁水幻靈.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "隙境原體") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)隙間之核.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)外世突觸.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)異界生命核.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "役人") {
         if (add[5].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(綠)老舊的役人懷錶.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[5].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[5].sum + '</div></div>';
         }
         if (add[6].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(藍)役人的制式懷錶.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[6].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[6].sum + '</div></div>';
         }
         if (add[7].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="怪物掉落/(紫)役人的時時刻刻.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[7].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[7].sum + '</div></div>';
         }
     } else if (result === "mondstadt_mon") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_mon1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_mon2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_mon3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_mon4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "mondstadt_tue") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_tue1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_tue2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_tue3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_tue4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "mondstadt_wed") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_wed1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_wed2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_wed3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/mondstadt_wed4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "liyue_mon") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_mon1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_mon2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_mon3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_mon4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "liyue_tue") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_tue1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_tue2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_tue3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_tue4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "liyue_wed") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_wed1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_wed2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_wed3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/liyue_wed4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "inazuma_mon") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_mon1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_mon2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_mon3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_mon4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "inazuma_tue") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_tue1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_tue2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_tue3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_tue4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "inazuma_wed") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_wed1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_wed2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_wed3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/inazuma_wed4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "sumeru_mon") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_mon1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_mon2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_mon3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_mon4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "sumeru_tue") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_tue1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_tue2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_tue3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_tue4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "sumeru_wed") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_wed1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_wed2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_wed3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/sumeru_wed4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "fontaine_mon") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_mon1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_mon2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_mon3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_mon4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "fontaine_tue") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_tue1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_tue2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_tue3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_tue4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     } else if (result === "fontaine_wed") {
         if (add[8].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_wed1.png" style=" background-color: #496C65;">'
-                + '<div class="name" style="font-size: 14px">' + add[8].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[8].sum + '</div></div>';
         }
         if (add[9].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_wed2.png" style=" background-color: #53799e;">'
-                + '<div class="name" style="font-size: 14px">' + add[9].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[9].sum + '</div></div>';
         }
         if (add[10].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_wed3.png" style=" background-color: #745a95;">'
-                + '<div class="name" style="font-size: 14px">' + add[10].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[10].sum + '</div></div>';
         } if (add[11].sum > 0) {
             output += '<div class="items" title="">'
                 + '<img src="weapon/fontaine_wed4.png" style=" background-color: #9E652E;">'
-                + '<div class="name" style="font-size: 14px">' + add[11].sum + '</div></div>';
+                + '<div class="name" style="font-size: 100%">' + add[11].sum + '</div></div>';
         }
     }
     return output;
